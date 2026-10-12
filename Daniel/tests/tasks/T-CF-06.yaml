@@ -1,0 +1,15 @@
+id: T-CF-06
+capability: cashflow
+title: How do I fix the cash gap?
+why: >
+  Non-borrowing options come first (chase invoice INV-1062), then the amount still to
+  borrow.
+scenario: cash_crunch
+turns:
+  - user: "How do I fix the cash gap?"
+    expect:
+      tools: [recommend_actions]
+      any_of: [INV-1062]
+      values:
+        - tool: recommend_actions
+          path: value.funding_need.amount                   # S$13,025.81

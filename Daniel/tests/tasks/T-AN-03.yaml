@@ -1,0 +1,15 @@
+id: T-AN-03
+capability: analysis
+title: Expense breakdown for August
+why: Spending by category, biggest first. Stock purchases (COGS) are the largest line.
+scenario: cash_crunch
+turns:
+  - user: "Break down our spending for August."
+    expect:
+      tools: [get_expense_breakdown]
+      tool_args:
+        get_expense_breakdown: {start: "2026-08-01", end: "2026-08-31"}
+      values:
+        - truth: monthly_totals.2026-08.by_category.cogs    # S$66,052.60
+        - tool: get_expense_breakdown
+          path: value.total                                 # S$132,572.75

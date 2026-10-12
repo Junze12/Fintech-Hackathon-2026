@@ -1,0 +1,22 @@
+id: T-AN-12
+capability: analysis
+title: Cash came in, but was September profitable?
+why: >
+  The cash-versus-profit trap. September's cash-basis operating margin is +34.7% (old
+  receivables were collected), but on accrual basis Straits Harbour lost money: net profit
+  for September 2026 is negative and the operating margin is about -2.7%.
+scenario: cash_crunch
+turns:
+  - user: "Lots of money came in this September. Were we really profitable that month?"
+    expect:
+      tools: [get_financial_statements]
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit
+          kind: money
+      any_value:                                            # a margin, either one
+        - tool: get_financial_statements
+          path: value.ratios.operating_margin               # -2.68%
+          kind: percent
+        - tool: get_financial_statements
+          path: value.ratios.net_margin                     # -3.01%
+          kind: percent

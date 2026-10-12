@@ -1,0 +1,19 @@
+id: T-AN-05
+capability: analysis
+title: Dependence on the biggest customer
+why: >
+  Clearpath gets about 61% of its invoiced sales from Tidewater. The answer must name the
+  customer and give the share for the period asked.
+scenario: concentrated_b2b
+mock_skip: The mock always uses the last full quarter, whatever period is asked for.
+turns:
+  - user: "Over the last 12 months, how dependent are we on our biggest customer?"
+    expect:
+      tools: [get_metrics]
+      any_of: [Tidewater]
+      values:
+        - tool: get_metrics
+          path: concentration.value.largest.share
+          near_truth: largest_customer.share_of_invoiced    # 0.612 (whole history = 12 months)
+          tolerance: "0.01"
+          kind: percent

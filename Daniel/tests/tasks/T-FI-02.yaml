@@ -1,0 +1,18 @@
+id: T-FI-02
+capability: financing
+title: A stated need, S$50k for 6 months
+why: The user's own amount and term replace the forecast need.
+scenario: cash_crunch
+turns:
+  - user: "I need S$50k for 6 months. What are my options?"
+    expect:
+      tools: [find_financing]
+      tool_args:
+        find_financing: {amount: "50000", months: 6}
+      excludes: [guaranteed, "will be approved", pre-approved]
+      values:
+        - tool: find_financing
+          path: value.ranked.0.quote.total_cost             # S$2,015.11
+        - tool: find_financing
+          path: value.ranked.0.quote.eir_pct                # 8.36%
+          kind: percent

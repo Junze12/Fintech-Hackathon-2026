@@ -1,0 +1,16 @@
+id: T-AN-07
+capability: analysis
+title: Is the business getting better or worse
+why: >
+  Cash trend over the last 12 whole months. Clearpath's average monthly net cash flow rose
+  from about S$10.0k to S$18.3k between the two most recent quarters, so it is improving.
+scenario: concentrated_b2b
+turns:
+  - user: "Are we getting better or worse? How has our cash flow trended?"
+    expect:
+      tools: [get_cash_trend]
+      any_of: [improv]
+      values:
+        - tool: get_cash_trend
+          path: value.avg_net_recent                        # S$18,324.90 a month
+          kind: money

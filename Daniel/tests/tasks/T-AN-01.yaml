@@ -1,0 +1,11 @@
+id: T-AN-01
+capability: analysis
+title: Total cash across accounts
+why: The most basic question. The answer must be the bank balances, quoted exactly.
+scenario: cash_crunch
+turns:
+  - user: "How much cash do we have right now, in total?"
+    expect:
+      tools: [get_cash_position]
+      values:
+        - truth_sum: [closing_balances.a-ops, closing_balances.a-res]   # S$156,526.85

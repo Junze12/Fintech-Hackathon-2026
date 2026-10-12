@@ -1,0 +1,19 @@
+id: T-AN-08
+capability: analysis
+title: Debt service cover and break-even sales
+why: >
+  Lender-style checks. Over the last 12 months Straits Harbour's cash after running the
+  business covers its loan repayments 1.46 times; it needs about S$124.5k of sales a month to
+  break even and recently averaged S$132.7k.
+scenario: cash_crunch
+turns:
+  - user: "Can we afford our loan repayments, and how much do we need to sell each month to break even?"
+    expect:
+      tools: [get_health_ratios]
+      values:
+        - tool: get_health_ratios
+          path: debt_service_cover.value.dscr               # 1.46
+          kind: number
+        - tool: get_health_ratios
+          path: break_even.value.break_even_monthly_sales   # S$124,480.60
+          kind: money

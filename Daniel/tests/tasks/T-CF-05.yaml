@@ -1,0 +1,14 @@
+id: T-CF-05
+capability: cashflow
+title: What if the biggest customer pays three weeks late?
+why: >
+  What-if runs on a copy of the forecast. The answer must give the new low point, and
+  nothing real changes.
+scenario: cash_crunch
+turns:
+  - user: "What if Bayfront pays 3 weeks late?"
+    expect:
+      tools: [run_what_if]
+      values:
+        - tool: run_what_if
+          path: value.scenario_low.balance                  # -S$70,895.36

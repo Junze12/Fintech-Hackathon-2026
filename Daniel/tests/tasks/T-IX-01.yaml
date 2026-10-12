@@ -1,0 +1,25 @@
+id: T-IX-01
+capability: interaction
+title: "Clarification: which bill?"
+why: >
+  "Pay the bill" is ambiguous (four bills are open). The assistant asks which one before
+  proposing anything, then pays the one named.
+scenario: cash_crunch
+mock_skip: >
+  The mock has no memory of the question it asked, so a bare "BL-5049" in the next message
+  isn't understood.
+turns:
+  - user: "Pay the bill."
+    expect:
+      asks_question: true
+      no_tools: [schedule_payment]
+  - user: "BL-5049, please."
+    expect:
+      tools: [schedule_payment]
+      values:
+        - value: "7116.82"
+          source: bills.csv b-0049 (BL-5049)
+  - user: "confirm {code}"
+audit:
+  schedule_payment: [pending, confirmed]
+effects: {schedule_payment: 1}

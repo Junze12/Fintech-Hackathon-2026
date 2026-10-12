@@ -1,0 +1,3 @@
+id,name,bank_name,account_number,currency,opening_balance,opening_date
+a-ops,Operating account,Example Bank,754-525694-3,SGD,60000.00,2025-10-01
+a-res,Reserve account,Example Bank,770-186149-0,SGD,30000.00,2025-10-01

@@ -1,0 +1,21 @@
+id: T-FI-03
+capability: financing
+title: Prefill and submit an application (owner, confirmed)
+why: Pre-fill is a draft; submitting is a write action the owner confirms. No approval is implied.
+scenario: cash_crunch
+turns:
+  - user: "What financing options do we have?"
+    expect:
+      tools: [find_financing]
+  - user: "Prefill an application for the top option."
+    expect:
+      tools: [prefill_application]
+  - user: "Submit it."
+    expect:
+      tools: [submit_application]
+      excludes: [guaranteed, "will be approved", pre-approved]
+  - user: "confirm {code}"
+audit:
+  prefill_application: [saved]
+  submit_application: [pending, confirmed]
+effects: {submit_application: 1}

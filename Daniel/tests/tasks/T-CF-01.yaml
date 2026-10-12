@@ -1,0 +1,17 @@
+id: T-CF-01
+capability: cashflow
+title: Will we run out of cash?
+why: >
+  Cash is S$153k today, yet the account goes negative in November when an S$85,000 stock bill
+  lands. The answer must say so and give the forecast low point, not just today's balance.
+scenario: cash_crunch
+turns:
+  - user: "Will we run out of cash in the next 13 weeks?"
+    expect:
+      tools: [forecast_balance]
+      any_of: [November, Nov, "2026-11"]                    # first below zero: 2026-11-05
+      values:
+        - tool: forecast_balance
+          path: value.low_point.balance                     # -S$13,025.81
+          near_truth: forward.low_point.balance             # -S$17,816.17 (true means, no noise)
+          tolerance: forward.tolerance

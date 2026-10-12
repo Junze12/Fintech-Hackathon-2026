@@ -1,0 +1,29 @@
+id: T-ED-03
+capability: editing
+title: Correct a month-end stock count
+why: >
+  The books say S$117,843.55 of stock at the end of September 2026; a recount found
+  S$116,343.55 (S$1,500 spoiled). Stock is S$1,500 lower, so cost of sales is S$1,500 higher
+  and net profit S$1,500 lower than the answer key, and the balance sheet still balances.
+scenario: cash_crunch
+turns:
+  - user: "Our stock count at the end of September 2026 was S$116,343.55, not what the books say. Record the stock count and apply it."
+    expect:
+      tools: [draft_adjustment, apply_adjustment]
+      tool_args:
+        draft_adjustment: {kind: stock_count, month: "2026-09", amount: "116343.55"}
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit      # -S$5,605.30 after
+          plus: "-1500.00"
+  - user: "confirm {code}"
+  - user: "Show me the September 2026 profit and loss."
+    expect:
+      tools: [get_financial_statements]
+      values:
+        - truth: accrual.months.2026-09.pnl.cost_of_sales   # S$77,975.34
+          plus: "1500.00"
+        - truth: accrual.months.2026-09.pnl.net_profit
+          plus: "-1500.00"
+audit:
+  apply_adjustment: [pending, confirmed, executed]
+effects: {apply_adjustment: 1}

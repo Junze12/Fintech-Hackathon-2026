@@ -1,0 +1,35 @@
+id: T-AN-10
+capability: analysis
+title: Net profit over the last 12 months (accrual)
+why: >
+  The headline profit question. On accrual basis Straits Harbour lost S$22,467.49 over the
+  12 months to September 2026 (operating margin about -1.0%), although its cash-basis
+  operating margin was +6.2%. The answer must come from the accrual statements.
+scenario: cash_crunch
+turns:
+  - user: "Did we make a profit over the last 12 months? What was our net profit?"
+    expect:
+      tools: [get_financial_statements]
+      tool_args:
+        get_financial_statements: {period: last_12_months}
+      values:
+        - truth_sum:                                        # -S$22,467.49
+            - accrual.months.2025-10.pnl.net_profit
+            - accrual.months.2025-11.pnl.net_profit
+            - accrual.months.2025-12.pnl.net_profit
+            - accrual.months.2026-01.pnl.net_profit
+            - accrual.months.2026-02.pnl.net_profit
+            - accrual.months.2026-03.pnl.net_profit
+            - accrual.months.2026-04.pnl.net_profit
+            - accrual.months.2026-05.pnl.net_profit
+            - accrual.months.2026-06.pnl.net_profit
+            - accrual.months.2026-07.pnl.net_profit
+            - accrual.months.2026-08.pnl.net_profit
+            - accrual.months.2026-09.pnl.net_profit
+      any_value:                                            # a margin, either one
+        - tool: get_financial_statements
+          path: value.ratios.operating_margin               # -1.03%
+          kind: percent
+        - tool: get_financial_statements
+          path: value.ratios.net_margin                     # -1.47%
+          kind: percent

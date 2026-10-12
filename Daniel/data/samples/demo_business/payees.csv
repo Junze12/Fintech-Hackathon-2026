@@ -1,0 +1,4 @@
+id,name,account_number,bank_name,allowlisted,verified
+p-beans,Highland Beans Trading,001-111111-1,Example Bank,yes,yes
+p-landlord,Tanjong Properties,002-222222-2,Other Bank,yes,yes
+p-bad,Unknown Vendor,ACCT-55667788X,Other Bank,no,no

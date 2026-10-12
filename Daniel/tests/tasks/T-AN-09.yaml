@@ -1,0 +1,26 @@
+id: T-AN-09
+capability: analysis
+title: Supplier dependence and net working capital
+why: >
+  Meridian Food Imports sends about 79% of all supplier bills. Net working capital at
+  30 September is cash plus receivables minus payables.
+scenario: cash_crunch
+mock_skip: The mock always uses the last full quarter, whatever period is asked for.
+turns:
+  - user: >
+      Over the 12 months to 30 September 2026, how dependent were we on our biggest supplier,
+      and what was our net working capital at the end of that period?
+    expect:
+      tools: [get_metrics]
+      tool_args:
+        get_metrics: {start: "2025-10-01", end: "2026-09-30"}
+      any_of: [Meridian]
+      values:
+        - tool: get_metrics
+          path: supplier_concentration.value.largest.share
+          near_truth: suppliers.s-meridian.share_of_billed  # 0.791
+          tolerance: "0.001"
+          kind: percent
+        - tool: get_metrics
+          path: working_capital.value.net_working_capital   # S$180,484.34
+          kind: money

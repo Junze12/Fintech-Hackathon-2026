@@ -1,0 +1,10 @@
+id: T-IX-02
+capability: interaction
+title: "Clarification: which invoice?"
+why: Several customers owe money. The assistant must ask which invoice, not guess and send.
+scenario: cash_crunch
+turns:
+  - user: "Send a reminder to the customer about their invoice."
+    expect:
+      asks_question: true
+      no_tools: [send_reminder]

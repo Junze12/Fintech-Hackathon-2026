@@ -1,0 +1,61 @@
+id,date,kind,ref_id,counterparty_id,account_id,amount,category,number,issue_date,due_date,description,gst
+ev-0001,2026-10-01,debit,,,a-ops,-7800.00,rent,,,,RENT OCT 26 UNIT 05-12,
+ev-0002,2026-10-03,bill_payment,b-0025,s-northpoint,a-ops,-10836.70,cogs,,,,GIRO Northpoint Contract Engineers BL-5025,
+ev-0003,2026-10-03,debit,,,a-ops,-1200.00,software,,,,DEVSUITE SUBSCRIPTION,
+ev-0004,2026-10-05,invoice_issued,i-0053,c-tidewater,a-ops,66000.00,,INV-1053,2026-10-05,2026-11-04,,5449.54
+ev-0005,2026-10-05,invoice_issued,i-0054,c-northshore,a-ops,18000.00,,INV-1054,2026-10-05,2026-11-04,,1486.24
+ev-0006,2026-10-05,invoice_issued,i-0055,c-pinewood,a-ops,12000.00,,INV-1055,2026-10-05,2026-10-19,,990.83
+ev-0007,2026-10-05,invoice_issued,i-0056,c-lumen,a-ops,14000.00,,INV-1056,2026-10-05,2026-11-04,,1155.96
+ev-0008,2026-10-05,bill_issued,b-0027,s-northpoint,a-ops,15000.00,,BL-5027,2026-10-05,2026-11-04,,1238.53
+ev-0009,2026-10-05,bill_issued,b-0028,s-stratus,a-ops,4200.00,,BL-5028,2026-10-05,2026-11-04,,346.79
+ev-0010,2026-10-06,bill_payment,b-0026,s-stratus,a-ops,-4543.08,cogs,,,,GIRO Stratus Hosting Asia BL-5026,
+ev-0011,2026-10-08,receipt,i-0050,c-northshore,a-ops,14781.26,sales,,,,GIRO CR Northshore Medical Group INV-1050,
+ev-0012,2026-10-12,debit,,,a-ops,-1500.00,marketing,,,,BRIGHTREACH ADS OCT,
+ev-0013,2026-10-14,debit,,,a-ops,-9100.00,payroll,,,,CPF CONTRIBUTION OCT26,
+ev-0014,2026-10-15,receipt,i-0048,c-lumen,a-ops,16942.52,sales,,,,GIRO CR Lumen Home Retail INV-1048,
+ev-0015,2026-10-18,debit,,,a-ops,-650.00,utilities,,,,GIRO SP SERVICES OCT,
+ev-0016,2026-10-20,receipt,i-0049,c-tidewater,a-ops,54483.18,sales,,,,GIRO CR Tidewater Port Logistics Pte. Ltd. INV-1049,
+ev-0017,2026-10-21,receipt,i-0055,c-pinewood,a-ops,12000.00,sales,,,,GIRO CR Pinewood Learning Centre INV-1055,
+ev-0018,2026-10-25,transfer,a-res,,a-ops,5000.00,transfer,,,,TRANSFER TO RESERVE A/C,
+ev-0019,2026-10-27,debit,,,a-ops,-52000.00,payroll,,,,SALARY OCT26,
+ev-0020,2026-10-28,debit,,,a-ops,-25.00,other,,,,SERVICE CHARGE OCT,
+ev-0021,2026-10-29,debit,,,a-ops,-21889.81,tax,,,,IRAS GST Q3 2026,
+ev-0022,2026-11-01,debit,,,a-ops,-7800.00,rent,,,,RENT NOV 26 UNIT 05-12,
+ev-0023,2026-11-03,debit,,,a-ops,-1200.00,software,,,,DEVSUITE SUBSCRIPTION,
+ev-0024,2026-11-04,bill_payment,b-0027,s-northpoint,a-ops,-15000.00,cogs,,,,GIRO Northpoint Contract Engineers BL-5027,
+ev-0025,2026-11-04,bill_payment,b-0028,s-stratus,a-ops,-4200.00,cogs,,,,GIRO Stratus Hosting Asia BL-5028,
+ev-0026,2026-11-05,invoice_issued,i-0057,c-tidewater,a-ops,66000.00,,INV-1057,2026-11-05,2026-12-05,,5449.54
+ev-0027,2026-11-05,invoice_issued,i-0058,c-northshore,a-ops,18000.00,,INV-1058,2026-11-05,2026-12-05,,1486.24
+ev-0028,2026-11-05,invoice_issued,i-0059,c-pinewood,a-ops,12000.00,,INV-1059,2026-11-05,2026-11-19,,990.83
+ev-0029,2026-11-05,invoice_issued,i-0060,c-lumen,a-ops,14000.00,,INV-1060,2026-11-05,2026-12-05,,1155.96
+ev-0030,2026-11-05,bill_issued,b-0029,s-northpoint,a-ops,15000.00,,BL-5029,2026-11-05,2026-12-05,,1238.53
+ev-0031,2026-11-05,bill_issued,b-0030,s-stratus,a-ops,4200.00,,BL-5030,2026-11-05,2026-12-05,,346.79
+ev-0032,2026-11-08,receipt,i-0054,c-northshore,a-ops,18000.00,sales,,,,GIRO CR Northshore Medical Group INV-1054,
+ev-0033,2026-11-12,debit,,,a-ops,-1500.00,marketing,,,,BRIGHTREACH ADS NOV,
+ev-0034,2026-11-13,receipt,i-0052,c-lumen,a-ops,15791.36,sales,,,,GIRO CR Lumen Home Retail INV-1052,
+ev-0035,2026-11-14,debit,,,a-ops,-9100.00,payroll,,,,CPF CONTRIBUTION NOV26,
+ev-0036,2026-11-18,debit,,,a-ops,-650.00,utilities,,,,GIRO SP SERVICES NOV,
+ev-0037,2026-11-19,receipt,i-0053,c-tidewater,a-ops,66000.00,sales,,,,GIRO CR Tidewater Port Logistics Pte. Ltd. INV-1053,
+ev-0038,2026-11-21,receipt,i-0059,c-pinewood,a-ops,12000.00,sales,,,,GIRO CR Pinewood Learning Centre INV-1059,
+ev-0039,2026-11-25,transfer,a-res,,a-ops,5000.00,transfer,,,,TRANSFER TO RESERVE A/C,
+ev-0040,2026-11-27,debit,,,a-ops,-52000.00,payroll,,,,SALARY NOV26,
+ev-0041,2026-11-28,debit,,,a-ops,-25.00,other,,,,SERVICE CHARGE NOV,
+ev-0042,2026-12-01,debit,,,a-ops,-7800.00,rent,,,,RENT DEC 26 UNIT 05-12,
+ev-0043,2026-12-03,debit,,,a-ops,-1200.00,software,,,,DEVSUITE SUBSCRIPTION,
+ev-0044,2026-12-05,invoice_issued,i-0061,c-tidewater,a-ops,66000.00,,INV-1061,2026-12-05,2027-01-04,,5449.54
+ev-0045,2026-12-05,invoice_issued,i-0062,c-northshore,a-ops,18000.00,,INV-1062,2026-12-05,2027-01-04,,1486.24
+ev-0046,2026-12-05,invoice_issued,i-0063,c-pinewood,a-ops,12000.00,,INV-1063,2026-12-05,2026-12-19,,990.83
+ev-0047,2026-12-05,invoice_issued,i-0064,c-lumen,a-ops,14000.00,,INV-1064,2026-12-05,2027-01-04,,1155.96
+ev-0048,2026-12-05,bill_issued,b-0031,s-northpoint,a-ops,15000.00,,BL-5031,2026-12-05,2027-01-04,,1238.53
+ev-0049,2026-12-05,bill_issued,b-0032,s-stratus,a-ops,4200.00,,BL-5032,2026-12-05,2027-01-04,,346.79
+ev-0050,2026-12-05,bill_payment,b-0029,s-northpoint,a-ops,-15000.00,cogs,,,,GIRO Northpoint Contract Engineers BL-5029,
+ev-0051,2026-12-05,bill_payment,b-0030,s-stratus,a-ops,-4200.00,cogs,,,,GIRO Stratus Hosting Asia BL-5030,
+ev-0052,2026-12-09,receipt,i-0058,c-northshore,a-ops,18000.00,sales,,,,GIRO CR Northshore Medical Group INV-1058,
+ev-0053,2026-12-12,debit,,,a-ops,-1500.00,marketing,,,,BRIGHTREACH ADS DEC,
+ev-0054,2026-12-14,receipt,i-0056,c-lumen,a-ops,14000.00,sales,,,,GIRO CR Lumen Home Retail INV-1056,
+ev-0055,2026-12-14,debit,,,a-ops,-9100.00,payroll,,,,CPF CONTRIBUTION DEC26,
+ev-0056,2026-12-18,debit,,,a-ops,-650.00,utilities,,,,GIRO SP SERVICES DEC,
+ev-0057,2026-12-20,receipt,i-0057,c-tidewater,a-ops,66000.00,sales,,,,GIRO CR Tidewater Port Logistics Pte. Ltd. INV-1057,
+ev-0058,2026-12-21,receipt,i-0063,c-pinewood,a-ops,12000.00,sales,,,,GIRO CR Pinewood Learning Centre INV-1063,
+ev-0059,2026-12-25,transfer,a-res,,a-ops,5000.00,transfer,,,,TRANSFER TO RESERVE A/C,
+ev-0060,2026-12-27,debit,,,a-ops,-52000.00,payroll,,,,SALARY DEC26,

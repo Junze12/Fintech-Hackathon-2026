@@ -1,0 +1,18 @@
+id: T-CF-08
+capability: cashflow
+title: Pay a bill (owner, confirmed)
+why: >
+  A real write task: the assistant proposes the payment, the owner confirms with the code,
+  and the sandbox ledger posts it.
+scenario: cash_crunch
+turns:
+  - user: "Pay bill BL-5048."
+    expect:
+      tools: [schedule_payment]
+      values:
+        - value: "61898.43"
+          source: bills.csv b-0048 (BL-5048)
+  - user: "confirm {code}"
+audit:
+  schedule_payment: [pending, confirmed]
+effects: {schedule_payment: 1}

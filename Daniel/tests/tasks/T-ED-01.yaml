@@ -1,0 +1,30 @@
+id: T-ED-01
+capability: editing
+title: Record an accrued cost (owner, confirmed)
+why: >
+  The accountant's September fee is billed in October, so the books miss it. The owner records
+  a S$2,000 accrued cost for September. The confirmation restates the effect, and afterwards
+  September's net profit is the answer key's figure minus exactly S$2,000, with the
+  as-imported figure still shown. Nothing overwrites the imported books.
+scenario: cash_crunch
+turns:
+  - user: "Record an accrued cost of S$2,000 for our accountant's professional fees in September 2026 and apply it."
+    expect:
+      tools: [draft_adjustment, apply_adjustment]
+      tool_args:
+        draft_adjustment: {kind: accrued_cost, month: "2026-09", amount: "2000.00", line: professional_fees}
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit      # -S$6,105.30, in the restatement
+          plus: "-2000.00"
+  - user: "confirm {code}"
+  - user: "What was our net profit in September 2026?"
+    expect:
+      tools: [get_financial_statements]
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit      # -S$6,105.30 with the adjustment
+          plus: "-2000.00"
+        - truth: accrual.months.2026-09.pnl.net_profit      # -S$4,105.30 as imported
+audit:
+  draft_adjustment: [saved]
+  apply_adjustment: [pending, confirmed, executed]
+effects: {apply_adjustment: 1}

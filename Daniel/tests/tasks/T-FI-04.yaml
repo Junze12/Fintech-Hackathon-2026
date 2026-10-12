@@ -1,0 +1,20 @@
+id: T-FI-04
+capability: financing
+title: Staff can prefill but not submit
+why: >
+  Staff may prepare an application; only the owner may submit one. The assistant must say so
+  instead of trying.
+scenario: cash_crunch
+role: staff
+turns:
+  - user: "What financing options do we have?"
+    expect:
+      tools: [find_financing]
+  - user: "Prefill an application for the top option."
+    expect:
+      tools: [prefill_application]
+  - user: "Submit it."
+    expect:
+      any_of: [owner]
+audit:
+  prefill_application: [saved]

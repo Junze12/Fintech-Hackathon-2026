@@ -1,0 +1,13 @@
+id: T-CF-03
+capability: cashflow
+title: Alerts on the healthy business
+why: Only one alert, an overdue invoice from a customer who always pays late.
+scenario: concentrated_b2b
+turns:
+  - user: "Any alerts?"
+    expect:
+      tools: [get_alerts]
+      any_of: [INV-1048, Lumen]                             # ground truth overdue_invoices: i-0048
+      values:
+        - value: "16942.52"
+          source: invoices.csv i-0048 (INV-1048)

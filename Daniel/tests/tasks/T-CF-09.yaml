@@ -1,0 +1,19 @@
+id: T-CF-09
+capability: cashflow
+title: Chase an overdue invoice (owner, confirmed)
+why: >
+  INV-1057 from Bayfront is overdue. The assistant drafts a reminder, the owner sends it
+  with the confirmation code.
+scenario: cash_crunch
+turns:
+  - user: "Remind Bayfront about INV-1057."
+    expect:
+      tools: [draft_reminder]
+  - user: "Send the reminder for INV-1057."
+    expect:
+      tools: [send_reminder]
+  - user: "confirm {code}"
+audit:
+  draft_reminder: [saved]
+  send_reminder: [pending, confirmed]
+effects: {send_reminder: 1}

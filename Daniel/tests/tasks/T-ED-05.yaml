@@ -1,0 +1,30 @@
+id: T-ED-05
+capability: editing
+title: Save a customer payment delay as a forecast assumption
+why: >
+  Bayfront usually pays 22 days after the due date; they now say 43. Saved as an assumption
+  (not a one-off what-if), the forecast low point becomes -S$70,660.41 on 14 Nov, the same
+  as run_what_if "Bayfront pays 3 weeks late" (algorithms.md, What-if). The forecast then
+  names the assumption and still gives the low point from the imported data alone.
+scenario: cash_crunch
+turns:
+  - user: "Bayfront has told us they will pay 43 days after the due date from now on. Save that as a forecast assumption."
+    expect:
+      tools: [save_assumption]
+      tool_args:
+        save_assumption: {kind: payment_delay, customer_id: c-bayfront, days: 43}
+      values:
+        - value: "-70660.41"
+          source: run_what_if delay_receipt c-bayfront 21 days (algorithms.md, What-if)
+  - user: "confirm {code}"
+  - user: "Will we run out of cash?"
+    expect:
+      tools: [forecast_balance]
+      values:
+        - tool: forecast_balance
+          path: value.low_point.balance                     # -S$70,660.41
+        - tool: forecast_balance
+          path: value.low_point_without_saved.balance       # -S$13,025.81
+audit:
+  save_assumption: [pending, confirmed, executed]
+effects: {save_assumption: 1}

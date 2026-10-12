@@ -1,0 +1,13 @@
+id: T-CF-02
+capability: cashflow
+title: Alerts on the cash-crunch business
+why: The critical alert is cash falling below the floor, then below zero, from 5 November.
+scenario: cash_crunch
+turns:
+  - user: "Any alerts I should know about?"
+    expect:
+      tools: [get_alerts]
+      values:
+        - truth: forward.first_below_zero                   # 2026-11-05
+        - tool: get_alerts
+          path: alerts.value.0.event_date                   # the critical alert's date

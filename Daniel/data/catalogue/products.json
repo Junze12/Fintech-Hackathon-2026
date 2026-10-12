@@ -1,0 +1,148 @@
+{
+  "disclaimer": "Illustrative catalogue for the demo. Lenders are fictional; products are modelled on common Singapore SME financing types (including Enterprise Financing Scheme-style working capital loans). Rates and fees are plausible examples, not quotes or offers. Approval is always the lender's decision.",
+  "products": [
+    {
+      "id": "wc-efs",
+      "lender": "Harbourline Bank",
+      "name": "SME Working Capital Loan (EFS-style)",
+      "type": "working_capital_loan",
+      "min_amount": "20000.00",
+      "max_amount": "300000.00",
+      "min_term_months": 12,
+      "max_term_months": 60,
+      "rate_type": "reducing_balance",
+      "annual_rate_pct": "7.5",
+      "fees": [
+        {"kind": "processing", "pct": "1"},
+        {"kind": "early_repayment", "pct": "1"}
+      ],
+      "repayment": "amortising",
+      "eligibility_rules": [
+        {"metric": "registered_in_sg", "operator": "==", "threshold": true, "description": "Registered and operating in Singapore"},
+        {"metric": "local_shareholding_pct", "operator": ">=", "threshold": "30", "description": "At least 30% local shareholding"},
+        {"metric": "months_operating", "operator": ">=", "threshold": "12", "description": "Operating for at least 12 months"},
+        {"metric": "employee_count", "operator": "<=", "threshold": "200", "description": "At most 200 employees"}
+      ],
+      "typical_use": "Day-to-day operating costs over one to five years"
+    },
+    {
+      "id": "micro",
+      "lender": "Harbourline Bank",
+      "name": "Micro Business Loan",
+      "type": "term_loan",
+      "min_amount": "10000.00",
+      "max_amount": "100000.00",
+      "min_term_months": 12,
+      "max_term_months": 48,
+      "rate_type": "reducing_balance",
+      "annual_rate_pct": "7.0",
+      "fees": [{"kind": "processing", "flat": "300.00"}],
+      "repayment": "amortising",
+      "eligibility_rules": [
+        {"metric": "registered_in_sg", "operator": "==", "threshold": true, "description": "Registered and operating in Singapore"},
+        {"metric": "employee_count", "operator": "<=", "threshold": "10", "description": "At most 10 employees"},
+        {"metric": "months_operating", "operator": ">=", "threshold": "6", "description": "Operating for at least 6 months"}
+      ],
+      "typical_use": "Small loans for micro businesses"
+    },
+    {
+      "id": "term",
+      "lender": "Merlion Commerce Bank",
+      "name": "Unsecured Business Term Loan",
+      "type": "term_loan",
+      "min_amount": "50000.00",
+      "max_amount": "500000.00",
+      "min_term_months": 12,
+      "max_term_months": 60,
+      "rate_type": "flat",
+      "annual_rate_pct": "5.5",
+      "fees": [
+        {"kind": "processing", "pct": "2"},
+        {"kind": "early_repayment", "pct": "3"}
+      ],
+      "repayment": "amortising",
+      "eligibility_rules": [
+        {"metric": "months_operating", "operator": ">=", "threshold": "24", "description": "Operating for at least 2 years"},
+        {"metric": "annual_revenue", "operator": ">=", "threshold": "500000", "description": "Annual revenue of at least S$500,000"}
+      ],
+      "typical_use": "Expansion, equipment or refinancing"
+    },
+    {
+      "id": "invoice",
+      "lender": "Tanjong Trade Finance",
+      "name": "Invoice Financing",
+      "type": "invoice_financing",
+      "min_amount": "5000.00",
+      "max_amount": "500000.00",
+      "min_term_months": 1,
+      "max_term_months": 4,
+      "rate_type": "reducing_balance",
+      "annual_rate_pct": "11",
+      "fees": [{"kind": "processing", "pct": "0.5"}],
+      "repayment": "on_invoice_settlement",
+      "eligibility_rules": [
+        {"metric": "months_operating", "operator": ">=", "threshold": "6", "description": "Operating for at least 6 months"},
+        {"metric": "annual_revenue", "operator": ">=", "threshold": "200000", "description": "Annual revenue of at least S$200,000"}
+      ],
+      "typical_use": "Cash now against unpaid customer invoices; repaid when the customer pays",
+      "advance_rate_pct": "80"
+    },
+    {
+      "id": "revolver",
+      "lender": "Harbourline Bank",
+      "name": "Revolving Credit Line",
+      "type": "revolving_credit",
+      "min_amount": "10000.00",
+      "max_amount": "150000.00",
+      "min_term_months": 1,
+      "max_term_months": 12,
+      "rate_type": "reducing_balance",
+      "annual_rate_pct": "9.5",
+      "fees": [{"kind": "admin", "flat": "500.00"}],
+      "repayment": "revolving",
+      "eligibility_rules": [
+        {"metric": "months_operating", "operator": ">=", "threshold": "24", "description": "Operating for at least 2 years"},
+        {"metric": "average_monthly_balance", "operator": ">=", "threshold": "50000", "description": "Average month-end bank balance of at least S$50,000"}
+      ],
+      "typical_use": "Short, repeated cash gaps; interest only on what is drawn"
+    },
+    {
+      "id": "trade",
+      "lender": "Merlion Commerce Bank",
+      "name": "Trade Financing (supplier payments)",
+      "type": "trade_financing",
+      "min_amount": "10000.00",
+      "max_amount": "1000000.00",
+      "min_term_months": 1,
+      "max_term_months": 6,
+      "rate_type": "reducing_balance",
+      "annual_rate_pct": "6.5",
+      "fees": [{"kind": "processing", "pct": "0.75"}],
+      "repayment": "interest_only_bullet",
+      "eligibility_rules": [
+        {"metric": "months_operating", "operator": ">=", "threshold": "12", "description": "Operating for at least 12 months"},
+        {"metric": "gross_margin", "operator": ">=", "threshold": "0.10", "description": "Gross margin of at least 10%"}
+      ],
+      "typical_use": "Paying suppliers for stock; repaid in one go at the end of the term"
+    },
+    {
+      "id": "shortterm",
+      "lender": "QuickCap Lending",
+      "name": "Short-term Business Loan",
+      "type": "working_capital_loan",
+      "min_amount": "5000.00",
+      "max_amount": "200000.00",
+      "min_term_months": 3,
+      "max_term_months": 12,
+      "rate_type": "flat",
+      "annual_rate_pct": "14.4",
+      "fees": [{"kind": "processing", "pct": "3"}],
+      "repayment": "amortising",
+      "eligibility_rules": [
+        {"metric": "months_operating", "operator": ">=", "threshold": "6", "description": "Operating for at least 6 months"},
+        {"metric": "annual_revenue", "operator": ">=", "threshold": "100000", "description": "Annual revenue of at least S$100,000"}
+      ],
+      "typical_use": "Fast, short loans from an alternative lender; costs more"
+    }
+  ]
+}

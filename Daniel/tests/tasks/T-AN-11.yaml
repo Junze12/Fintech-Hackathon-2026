@@ -1,0 +1,18 @@
+id: T-AN-11
+capability: analysis
+title: Balance sheet at the end of September 2026
+why: >
+  What the business owns and owes. Northpoint's balance sheet at 30 September 2026 must give
+  total assets, liabilities and equity as the answer key has them, and say that it balances.
+scenario: concentrated_b2b
+turns:
+  - user: "Show me our balance sheet at the end of September 2026. Does it balance?"
+    expect:
+      tools: [get_financial_statements]
+      values:
+        - truth: accrual.months.2026-09.balance_sheet.total_assets
+          kind: money
+        - truth: accrual.months.2026-09.balance_sheet.total_liabilities
+          kind: money
+        - truth: accrual.months.2026-09.balance_sheet.total_equity
+          kind: money

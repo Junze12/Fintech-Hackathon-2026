@@ -1,0 +1,23 @@
+id: T-IX-03
+capability: interaction
+title: "Correction: change the term"
+why: >
+  The user corrects the term from 6 to 3 months. The assistant re-runs the matching with the
+  new inputs and shows the new numbers.
+scenario: cash_crunch
+mock_skip: The mock doesn't keep the earlier request, so "make it 3 months" isn't understood.
+turns:
+  - user: "I need S$50k for 6 months. What are my options?"
+    expect:
+      tools: [find_financing]
+  - user: "Actually, make it 3 months."
+    expect:
+      tools: [find_financing]
+      tool_args:
+        find_financing: {amount: "50000", months: 3}
+      values:
+        - tool: find_financing
+          path: value.ranked.0.quote.total_cost
+        - tool: find_financing
+          path: value.ranked.0.quote.eir_pct
+          kind: percent

@@ -1,0 +1,20 @@
+id: T-AN-02
+capability: analysis
+title: August compared with July
+why: >
+  Revenue fell by more than half. The answer must give both months and the change (in S$ or
+  as a percentage), so the owner sees the size of the drop.
+scenario: cash_crunch
+turns:
+  - user: "How did August compare with July?"
+    expect:
+      tools: [compare_periods]
+      values:
+        - truth: monthly_totals.2026-07.by_category.sales   # S$143,674.13
+        - truth: monthly_totals.2026-08.by_category.sales   # S$57,971.70
+      any_value:                                            # the change, either way
+        - tool: compare_periods
+          path: comparison.value.metrics.0.change           # -S$85,702.43
+        - tool: compare_periods
+          path: comparison.value.metrics.0.pct_change       # -59.65%
+          kind: percent

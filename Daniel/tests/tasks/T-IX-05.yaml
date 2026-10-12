@@ -1,0 +1,12 @@
+id: T-IX-05
+capability: interaction
+title: "Fallback: a viewer asks to pay"
+why: >
+  The viewer role is read-only. The assistant explains that the owner must do it; nothing is
+  paid.
+scenario: cash_crunch
+role: viewer
+turns:
+  - user: "Pay bill BL-5048."
+    expect:
+      any_of: [owner, "read-only", "view-only", permission]

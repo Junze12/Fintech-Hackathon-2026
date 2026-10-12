@@ -1,0 +1,24 @@
+id,account_id,date,amount,description,counterparty_id,category
+t01,a-ops,2026-07-01,-4500.00,Rent July,c-landlord,rent
+t02,a-ops,2026-07-03,"6,200.00",Marina Office Pantry INV-0101,c-pantry,sales
+t03,a-ops,2026-07-08,-2350.40,Highland Beans order 1182,c-beans,cogs
+t04,a-ops,2026-07-15,3100.00,Sunrise Events deposit,c-events,sales
+t05,a-ops,2026-07-28,-9800.00,Payroll July,,payroll
+t06,a-ops,2026-07-30,-412.65,SP Group utilities,,utilities
+t07,a-ops,2026-08-01,-4500.00,Rent August,c-landlord,rent
+t08,a-ops,2026-08-04,7150.00,Marina Office Pantry INV-0102,c-pantry,sales
+t09,a-ops,2026-08-10,-2610.00,Highland Beans order 1207,c-beans,cogs
+t10,a-ops,20/08/2026,2400.00,Sunrise Events balance,c-events,sales
+t11,a-ops,2026-08-28,-9800.00,Payroll August,,payroll
+t12,a-ops,2026-08-30,-398.20,SP Group utilities,,utilities
+t13,a-ops,2026-09-01,-4500.00,Rent September,c-landlord,rent
+t14,a-ops,2026-09-03,6880.00,Marina Office Pantry INV-0103,c-pantry,sales
+t15,a-ops,2026-09-09,-2795.50,Highland Beans order 1231,c-beans,cogs
+t16,a-ops,2026-09-15,S$1500.00,Card sales settlement,,sales
+t17,a-ops,2026-09-28,-9800.00,Payroll September,,payroll
+t18,a-ops,2026-09-29,-405.10,SP Group utilities,,utilities
+t19,a-ops,2026-09-30,-2000.00,Transfer to reserve,,transfer
+t20,a-res,2026-09-30,2000.00,Transfer from operating,,transfer
+t21,a-ops,2026-09-12,12.345,Rounding test,,other
+t22,a-ops,2026/09/31,-50.00,Bad date format,,other
+t23,a-missing,2026-09-20,-75.00,Unknown account,,other

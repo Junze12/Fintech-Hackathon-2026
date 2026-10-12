@@ -1,0 +1,61 @@
+# --- Personal data: NEVER commit ---
+# The registration form holds teammates' names, ages, nationalities, student IDs,
+# passport numbers and passport bio-page scans. The GitHub repo is a submission
+# deliverable, so treat this folder as publishable and keep PII out of it.
+international-registration-form-en.xlsx
+*registration-form*
+passport*
+proof-of-enrollment*
+/admin/
+
+# --- Organiser material: kept locally, not redistributed in the public repo ---
+/reference/
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.*
+credentials.*
+config.local.*
+
+# --- Data ---
+# Only synthetic or public SME data belongs in the repo; nothing real.
+/data/raw/
+/data/private/
+*.sqlite
+*.db
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- Node ---
+node_modules/
+dist/
+build/
+.next/
+npm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+.vscode/
+.idea/
+
+# --- Evidence ---
+# claude/ and fooled/ exports are committed (deliverable #6); the mock run is regenerated.
+/evidence/logs/mock/
+/evidence/logs/*-partial/

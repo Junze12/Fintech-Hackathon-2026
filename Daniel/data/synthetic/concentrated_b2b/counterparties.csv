@@ -1,0 +1,7 @@
+id,name,kind,payment_terms_days,default_category
+c-tidewater,Tidewater Port Logistics Pte. Ltd.,customer,30,
+c-northshore,Northshore Medical Group,customer,30,
+c-pinewood,Pinewood Learning Centre,customer,14,
+c-lumen,Lumen Home Retail,customer,30,
+s-northpoint,Northpoint Contract Engineers,supplier,30,
+s-stratus,Stratus Hosting Asia,supplier,30,

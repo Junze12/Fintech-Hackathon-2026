@@ -1,0 +1,22 @@
+id: T-AN-04
+capability: analysis
+title: Revenue and gross margin for July to September
+why: A named period, so the assistant must use exactly that period.
+scenario: concentrated_b2b
+mock_skip: >
+  The mock ignores the period named in the question and always uses the last three full
+  months (June to August).
+turns:
+  - user: "What were our revenue and gross margin from July to September 2026?"
+    expect:
+      tools: [get_metrics]
+      tool_args:
+        get_metrics: {start: "2026-07-01", end: "2026-09-30"}
+      values:
+        - truth_sum:                                        # S$334,757.42
+            - monthly_totals.2026-07.by_category.sales
+            - monthly_totals.2026-08.by_category.sales
+            - monthly_totals.2026-09.by_category.sales
+        - tool: get_metrics
+          path: period.value.gross_margin                   # 83.3%
+          kind: percent

@@ -1,0 +1,22 @@
+id: T-ED-04
+capability: editing
+title: Undo an adjustment
+why: >
+  Every adjustment is undoable. After undoing the S$2,000 accrual, September's net profit is
+  the answer key's figure again; the record is kept, marked undone.
+scenario: cash_crunch
+turns:
+  - user: "Record an accrued cost of S$2,000 for professional fees in September 2026 and apply it."
+    expect:
+      tools: [draft_adjustment, apply_adjustment]
+  - user: "confirm {code}"
+  - user: "Actually, undo that adjustment."
+    expect:
+      tools: [undo_adjustment]
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit      # back to -S$4,105.30
+  - user: "confirm {code}"
+audit:
+  apply_adjustment: [pending, confirmed, executed]
+  undo_adjustment: [pending, confirmed, executed]
+effects: {apply_adjustment: 1, undo_adjustment: 1}

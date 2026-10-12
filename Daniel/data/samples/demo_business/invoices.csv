@@ -1,0 +1,4 @@
+id,counterparty_id,number,issue_date,due_date,amount,amount_paid,status,notes
+i-0103,c-pantry,INV-0103,2026-08-15,2026-09-14,6880.00,6880.00,paid,
+i-0098,c-events,INV-0098,2026-08-25,2026-09-08,1850.00,0,open,Corporate tasting event
+i-0104,c-pantry,INV-0104,2026-09-15,2026-10-15,7020.00,0,open,

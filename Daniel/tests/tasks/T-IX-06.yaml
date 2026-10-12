@@ -1,0 +1,13 @@
+id: T-IX-06
+capability: interaction
+title: "Missing data: inventory days"
+why: >
+  There is no inventory data, so DIO can't be calculated. The assistant says so and gives
+  what it can (DSO / DPO), never an invented DIO.
+scenario: concentrated_b2b
+mock_skip: The mock has no rule for DIO and shows its help text.
+turns:
+  - user: "What's our DIO?"
+    expect:
+      tools: [get_metrics]
+      any_of: [inventory]

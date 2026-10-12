@@ -1,0 +1,13 @@
+id: T-CF-07
+capability: cashflow
+title: Do we need a loan? (no)
+why: >
+  Clearpath's cash stays above zero for the whole forecast. The assistant must say borrowing
+  isn't needed and must not push a product.
+scenario: concentrated_b2b
+turns:
+  - user: "Do we need a loan?"
+    expect:
+      any_of: ["not need", "no need", "don't need", "do not need", "not needed",
+               "no borrowing", "isn't needed", "is not needed", "no loan"]
+      excludes: [Harbourline, Merlion, QuickCap, Tanjong]

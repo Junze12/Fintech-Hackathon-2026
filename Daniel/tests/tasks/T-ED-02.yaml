@@ -1,0 +1,22 @@
+id: T-ED-02
+capability: editing
+title: Relabel an uncategorised payment as owner drawings
+why: >
+  Payment t00158 (S$307.50, "MISC DEBIT", 2 Jul 2026) was money the owner took, not a business
+  cost. Relabelling it as owner drawings takes it out of profit: July's net profit becomes
+  the answer key's figure plus exactly S$307.50. Cash does not change.
+scenario: cash_crunch
+turns:
+  - user: "Payment t00158 was me taking money out for myself. Relabel it as owner drawings and apply it."
+    expect:
+      tools: [draft_adjustment, apply_adjustment]
+      tool_args:
+        draft_adjustment: {kind: relabel, transaction_id: t00158, to: owner_draw}
+      values:
+        - truth: accrual.months.2026-07.pnl.net_profit      # -S$7,282.39 now
+        - truth: accrual.months.2026-07.pnl.net_profit      # -S$6,974.89 after
+          plus: "307.50"
+  - user: "confirm {code}"
+audit:
+  apply_adjustment: [pending, confirmed, executed]
+effects: {apply_adjustment: 1}

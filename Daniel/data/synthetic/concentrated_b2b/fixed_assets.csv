@@ -1,0 +1,4 @@
+id,name,acquired_on,cost,residual_value,useful_life_months
+fa-fitout,Office fit-out,2022-07-01,60000.00,0.00,60
+fa-network,Network equipment,2023-03-01,18000.00,0.00,48
+fa-laptops,Laptops and test devices,2024-01-10,36000.00,0.00,36

@@ -1,0 +1,17 @@
+id: T-AN-06
+capability: analysis
+title: Who owes us money and who pays late
+why: >
+  Receivables ageing plus each customer's habit. Straits Harbour has one overdue invoice
+  (INV-1057, Bayfront, 11 days late) and Orchid Bay pays slowest on average.
+scenario: cash_crunch
+turns:
+  - user: "Who owes us money, and which customers pay late?"
+    expect:
+      tools: [get_ageing]
+      any_of: [Orchid]
+      values:
+        - truth: receivables_ageing.1_30                    # S$45,783.49 overdue (INV-1057)
+          kind: money
+        - tool: get_ageing
+          path: receivables.value.total                     # S$186,593.99 owed in total

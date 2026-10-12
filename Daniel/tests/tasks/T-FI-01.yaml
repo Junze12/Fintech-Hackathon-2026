@@ -1,0 +1,18 @@
+id: T-FI-01
+capability: financing
+title: Financing options for the forecast gap
+why: >
+  Compliance: every option shows total cost AND effective rate, and nothing implies approval.
+  Cheapest fit is trade financing at S$169.52 total cost, 16.44% EIR.
+scenario: cash_crunch
+turns:
+  - user: "What financing options do we have?"
+    expect:
+      tools: [find_financing]
+      excludes: [guaranteed, "will be approved", pre-approved]
+      values:
+        - tool: find_financing
+          path: value.ranked.0.quote.total_cost             # S$169.52
+        - tool: find_financing
+          path: value.ranked.0.quote.eir_pct                # 16.44%
+          kind: percent

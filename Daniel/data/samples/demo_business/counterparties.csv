@@ -1,0 +1,5 @@
+id,name,kind,payment_terms_days,default_category
+c-pantry,Marina Office Pantry,customer,30,
+c-events,Sunrise Events,customer,14,
+c-beans,Highland Beans Trading,supplier,30,
+c-landlord,Tanjong Properties,supplier,0,rent

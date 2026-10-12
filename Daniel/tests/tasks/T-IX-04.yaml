@@ -1,0 +1,14 @@
+id: T-IX-04
+capability: interaction
+title: "Missing data: a year before the records start"
+why: >
+  The bank history starts in October 2025. The assistant must say there is no 2023 data,
+  not answer for another period or report S$0 as if it were real.
+scenario: cash_crunch
+mock_skip: The mock ignores the year and answers for the last three months (known mock gap).
+turns:
+  - user: "What was our revenue in 2023?"
+    expect:
+      any_of: ["no data", "no transactions", "no records", "don't have", "do not have",
+               "doesn't cover", "does not cover", "only goes back", "starts", "begins",
+               "not available", "no revenue data", "isn't available"]

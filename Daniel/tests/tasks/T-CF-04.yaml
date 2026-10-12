@@ -1,0 +1,13 @@
+id: T-CF-04
+capability: cashflow
+title: What do we have to pay soon?
+why: The obligations calendar must include the S$61,898.43 Meridian bill due 3 October and rent.
+scenario: cash_crunch
+turns:
+  - user: "What do we have to pay in the next four weeks?"
+    expect:
+      tools: [get_obligations]
+      values:
+        - value: "61898.43"
+          source: bills.csv b-0048 (BL-5048, due 2026-10-03)
+        - truth: recurring.0.amount                         # rent, S$12,500.00

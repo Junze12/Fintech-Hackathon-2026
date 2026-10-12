@@ -1,0 +1,22 @@
+id: T-ED-06
+capability: editing
+title: Staff drafts an adjustment; only the owner can apply it
+why: >
+  Staff can prepare a correction but not change reported profit. The draft is saved and
+  counts in no figure; the reply says the owner must apply it.
+scenario: cash_crunch
+role: staff
+turns:
+  - user: "Record an accrued cost of S$2,000 for professional fees in September 2026."
+    expect:
+      tools: [draft_adjustment]
+      no_tools: [apply_adjustment]
+      any_of: ["owner"]
+  - user: "What was our net profit in September 2026?"
+    expect:
+      tools: [get_financial_statements]
+      values:
+        - truth: accrual.months.2026-09.pnl.net_profit      # unchanged: -S$4,105.30
+audit:
+  draft_adjustment: [saved]
+effects: {}
