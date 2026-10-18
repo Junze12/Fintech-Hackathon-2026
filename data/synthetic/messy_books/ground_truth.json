@@ -1,0 +1,209 @@
+{
+  "as_of": "2026-09-30",
+  "business_id": "biz-messy",
+  "differences": "cash_crunch with planted bookkeeping errors (see planted). Cash, receivables, statements and the forecast differ from cash_crunch, so only the reconciliation answer key applies here.",
+  "history_start": "2025-10-01",
+  "planted": [
+    {
+      "amount": "4711.67",
+      "id": "duplicate_payment:t90001",
+      "kind": "duplicate_payment",
+      "severity": "high",
+      "what": "BL-5050 payment posted twice"
+    },
+    {
+      "amount": "239.39",
+      "id": "bill_overpaid:t00179",
+      "kind": "bill_overpaid",
+      "severity": "high",
+      "what": "BL-5041 overpaid by 3%"
+    },
+    {
+      "amount": "851.93",
+      "id": "short_payment:t00199",
+      "kind": "short_payment",
+      "severity": "medium",
+      "what": "INV-1058 paid 2.5% short"
+    },
+    {
+      "amount": "12453.58",
+      "id": "invoice_paid_no_receipt:i-0060",
+      "kind": "invoice_paid_no_receipt",
+      "severity": "high",
+      "what": "INV-1060 paid in the books only"
+    },
+    {
+      "amount": "4174.92",
+      "id": "bill_paid_no_payment:b-0047",
+      "kind": "bill_paid_no_payment",
+      "severity": "medium",
+      "what": "BL-5047 paid in the books only"
+    },
+    {
+      "amount": "2400.00",
+      "id": "unclaimed_receipt:t90002",
+      "kind": "unclaimed_receipt",
+      "severity": "medium",
+      "what": "Orchid receipt, no invoice"
+    },
+    {
+      "amount": "1850.00",
+      "id": "unclaimed_payment:t90003",
+      "kind": "unclaimed_payment",
+      "severity": "medium",
+      "what": "Eastwind payment, no bill"
+    },
+    {
+      "amount": "6420.00",
+      "id": "statement_bill_missing:st-extra-1",
+      "kind": "statement_bill_missing",
+      "severity": "high",
+      "what": "Meridian statement lists BL-5099, not in our bills"
+    },
+    {
+      "amount": "250.00",
+      "id": "statement_amount_differs:st-b-0049",
+      "kind": "statement_amount_differs",
+      "severity": "high",
+      "what": "statement 250.00 over our bill"
+    },
+    {
+      "amount": "0.40",
+      "id": "statement_amount_differs:st-b-0042",
+      "kind": "statement_amount_differs",
+      "severity": "low",
+      "what": "statement 0.40 over our bill"
+    }
+  ],
+  "reconciliation": {
+    "counts": {
+      "high": 5,
+      "low": 11,
+      "medium": 4
+    },
+    "expected": [
+      {
+        "amount": "239.39",
+        "id": "bill_overpaid:t00179",
+        "kind": "bill_overpaid",
+        "severity": "high"
+      },
+      {
+        "amount": "4174.92",
+        "id": "bill_paid_no_payment:b-0047",
+        "kind": "bill_paid_no_payment",
+        "severity": "medium"
+      },
+      {
+        "amount": "4711.67",
+        "id": "duplicate_payment:t90001",
+        "kind": "duplicate_payment",
+        "severity": "high"
+      },
+      {
+        "amount": "12453.58",
+        "id": "invoice_paid_no_receipt:i-0060",
+        "kind": "invoice_paid_no_receipt",
+        "severity": "high"
+      },
+      {
+        "amount": "851.93",
+        "id": "short_payment:t00199",
+        "kind": "short_payment",
+        "severity": "medium"
+      },
+      {
+        "amount": "0.40",
+        "id": "statement_amount_differs:st-b-0042",
+        "kind": "statement_amount_differs",
+        "severity": "low"
+      },
+      {
+        "amount": "250.00",
+        "id": "statement_amount_differs:st-b-0049",
+        "kind": "statement_amount_differs",
+        "severity": "high"
+      },
+      {
+        "amount": "6420.00",
+        "id": "statement_bill_missing:st-extra-1",
+        "kind": "statement_bill_missing",
+        "severity": "high"
+      },
+      {
+        "amount": "1850.00",
+        "id": "unclaimed_payment:t90003",
+        "kind": "unclaimed_payment",
+        "severity": "medium"
+      },
+      {
+        "amount": "2400.00",
+        "id": "unclaimed_receipt:t90002",
+        "kind": "unclaimed_receipt",
+        "severity": "medium"
+      },
+      {
+        "amount": "176.86",
+        "id": "unexplained_payment:t00038",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "220.31",
+        "id": "unexplained_payment:t00045",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "372.64",
+        "id": "unexplained_payment:t00058",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "379.24",
+        "id": "unexplained_payment:t00061",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "170.27",
+        "id": "unexplained_payment:t00094",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "67.34",
+        "id": "unexplained_payment:t00100",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "301.41",
+        "id": "unexplained_payment:t00115",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "133.21",
+        "id": "unexplained_payment:t00134",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "318.97",
+        "id": "unexplained_payment:t00147",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "307.50",
+        "id": "unexplained_payment:t00158",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      }
+    ]
+  },
+  "scenario": "messy_books",
+  "variant_of": "cash_crunch"
+}

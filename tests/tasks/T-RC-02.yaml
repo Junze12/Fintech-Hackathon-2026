@@ -1,0 +1,16 @@
+id: T-RC-02
+capability: reconciliation
+title: Did we pay anyone twice?
+why: >
+  The BL-5050 payment to Harbour Freight (S$4,711.67) was posted again three days later. The
+  answer names the amount and says what to do next (ask for a refund or a credit), without
+  moving any money.
+scenario: messy_books
+turns:
+  - user: "Did we pay any supplier twice?"
+    expect:
+      tools: [get_reconciliation_exceptions]
+      no_tools: [schedule_payment]
+      values:
+        - truth: planted.0.amount       # S$4,711.67
+      any_of: ["refund", "credit"]

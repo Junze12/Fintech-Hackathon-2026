@@ -1,0 +1,1490 @@
+{
+  "accrual": {
+    "basis": "accrual; amounts GST-exclusive; input GST claimed on supplier bills only; periodic inventory (cost of sales = opening stock + purchases - closing stock); straight-line depreciation from the month after purchase; interest in operating cash flow, loan principal in financing; payroll cost = gross pay + employer CPF",
+    "gst_returns": {
+      "2025-Q3": {
+        "input_tax": "4916.93",
+        "net_payable": "21977.84",
+        "output_tax": "26894.77"
+      },
+      "2025-Q4": {
+        "input_tax": "4673.69",
+        "net_payable": "21799.72",
+        "output_tax": "26473.41"
+      },
+      "2026-Q1": {
+        "input_tax": "5448.22",
+        "net_payable": "21288.49",
+        "output_tax": "26736.71"
+      },
+      "2026-Q2": {
+        "input_tax": "4727.90",
+        "net_payable": "22475.99",
+        "output_tax": "27203.89"
+      },
+      "2026-Q3": {
+        "input_tax": "4415.61",
+        "net_payable": "21889.81",
+        "output_tax": "26305.42"
+      }
+    },
+    "loan": null,
+    "months": {
+      "2025-10": {
+        "balance_sheet": {
+          "accumulated_depreciation": "71625.00",
+          "cash": "85313.36",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "42375.00",
+          "gst_payable": "7560.99",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "20988.43",
+          "receivables": "114940.91",
+          "retained_earnings": "104979.85",
+          "share_capital": "100000.00",
+          "total_assets": "242629.27",
+          "total_equity": "204979.85",
+          "total_liabilities": "37649.42"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "85313.36",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "-4686.64",
+          "net_profit": "11428.29",
+          "opening_cash": "90000.00",
+          "operating": "-4686.64",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "-14416.85",
+            "inventory": "0.00",
+            "payables": "-1495.45",
+            "receivables": "-2577.63"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "19255.44",
+          "gross_profit": "84010.96",
+          "interest": "0.00",
+          "net_profit": "11428.29",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1025.22",
+            "other": "25.00",
+            "payroll": "59594.90",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "562.55"
+          },
+          "operating_profit": "11428.29",
+          "purchases": "19255.44",
+          "revenue": "103266.40",
+          "total_operating_expenses": "72582.67"
+        }
+      },
+      "2025-11": {
+        "balance_sheet": {
+          "accumulated_depreciation": "74000.00",
+          "cash": "104137.63",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "40000.00",
+          "gst_payable": "14326.70",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "18077.13",
+          "receivables": "102709.89",
+          "retained_earnings": "105343.69",
+          "share_capital": "100000.00",
+          "total_assets": "246847.52",
+          "total_equity": "205343.69",
+          "total_liabilities": "41503.83"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "104137.63",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "18824.27",
+          "net_profit": "363.84",
+          "opening_cash": "85313.36",
+          "operating": "18824.27",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "6765.71",
+            "inventory": "0.00",
+            "payables": "-2911.30",
+            "receivables": "12231.02"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "16584.52",
+          "gross_profit": "75174.65",
+          "interest": "0.00",
+          "net_profit": "363.84",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1365.51",
+            "other": "25.00",
+            "payroll": "61357.50",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "687.80"
+          },
+          "operating_profit": "363.84",
+          "purchases": "16584.52",
+          "revenue": "91759.17",
+          "total_operating_expenses": "74810.81"
+        }
+      },
+      "2025-12": {
+        "balance_sheet": {
+          "accumulated_depreciation": "76375.00",
+          "cash": "125311.78",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "37625.00",
+          "gst_payable": "21799.72",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "17538.02",
+          "receivables": "98887.00",
+          "retained_earnings": "113386.04",
+          "share_capital": "100000.00",
+          "total_assets": "261823.78",
+          "total_equity": "213386.04",
+          "total_liabilities": "48437.74"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "125311.78",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "21174.15",
+          "net_profit": "8042.35",
+          "opening_cash": "104137.63",
+          "operating": "21174.15",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "7473.02",
+            "inventory": "0.00",
+            "payables": "-539.11",
+            "receivables": "3822.89"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "16089.93",
+          "gross_profit": "83033.43",
+          "interest": "0.00",
+          "net_profit": "8042.35",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1932.28",
+            "other": "289.99",
+            "payroll": "60744.00",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "649.81"
+          },
+          "operating_profit": "8042.35",
+          "purchases": "16089.93",
+          "revenue": "99123.36",
+          "total_operating_expenses": "74991.08"
+        }
+      },
+      "2026-01": {
+        "balance_sheet": {
+          "accumulated_depreciation": "78750.00",
+          "cash": "117559.38",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "35250.00",
+          "gst_payable": "7627.59",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "24102.48",
+          "receivables": "111340.47",
+          "retained_earnings": "123319.78",
+          "share_capital": "100000.00",
+          "total_assets": "264149.85",
+          "total_equity": "223319.78",
+          "total_liabilities": "40830.07"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "117559.38",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "-7752.40",
+          "net_profit": "9933.74",
+          "opening_cash": "125311.78",
+          "operating": "-7752.40",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "-14172.13",
+            "inventory": "0.00",
+            "payables": "6564.46",
+            "receivables": "-12453.47"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "22112.37",
+          "gross_profit": "84750.87",
+          "interest": "0.00",
+          "net_profit": "9933.74",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1631.96",
+            "other": "25.00",
+            "payroll": "61237.51",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "547.66"
+          },
+          "operating_profit": "9933.74",
+          "purchases": "22112.37",
+          "revenue": "106863.24",
+          "total_operating_expenses": "74817.13"
+        }
+      },
+      "2026-02": {
+        "balance_sheet": {
+          "accumulated_depreciation": "81125.00",
+          "cash": "130473.38",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "32875.00",
+          "gst_payable": "14672.57",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "21532.90",
+          "receivables": "108659.44",
+          "retained_earnings": "126702.35",
+          "share_capital": "100000.00",
+          "total_assets": "272007.82",
+          "total_equity": "226702.35",
+          "total_liabilities": "45305.47"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "130473.38",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "12914.00",
+          "net_profit": "3382.57",
+          "opening_cash": "117559.38",
+          "operating": "12914.00",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "7044.98",
+            "inventory": "0.00",
+            "payables": "-2569.58",
+            "receivables": "2681.03"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "19754.95",
+          "gross_profit": "78277.53",
+          "interest": "0.00",
+          "net_profit": "3382.57",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1748.56",
+            "other": "398.17",
+            "payroll": "60700.48",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "672.75"
+          },
+          "operating_profit": "3382.57",
+          "purchases": "19754.95",
+          "revenue": "98032.48",
+          "total_operating_expenses": "74894.96"
+        }
+      },
+      "2026-03": {
+        "balance_sheet": {
+          "accumulated_depreciation": "83500.00",
+          "cash": "143780.36",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "30500.00",
+          "gst_payable": "21288.49",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "20348.62",
+          "receivables": "101818.13",
+          "retained_earnings": "125361.38",
+          "share_capital": "100000.00",
+          "total_assets": "276098.49",
+          "total_equity": "225361.38",
+          "total_liabilities": "50737.11"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "143780.36",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "13306.98",
+          "net_profit": "-1340.97",
+          "opening_cash": "130473.38",
+          "operating": "13306.98",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "6615.92",
+            "inventory": "0.00",
+            "payables": "-1184.28",
+            "receivables": "6841.31"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "18668.46",
+          "gross_profit": "73510.22",
+          "interest": "0.00",
+          "net_profit": "-1340.97",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1498.04",
+            "other": "402.97",
+            "payroll": "60780.28",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "794.90"
+          },
+          "operating_profit": "-1340.97",
+          "purchases": "18668.46",
+          "revenue": "92178.68",
+          "total_operating_expenses": "74851.19"
+        }
+      },
+      "2026-04": {
+        "balance_sheet": {
+          "accumulated_depreciation": "85875.00",
+          "cash": "130374.99",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "28125.00",
+          "gst_payable": "6720.55",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "21681.89",
+          "receivables": "104081.81",
+          "retained_earnings": "125079.36",
+          "share_capital": "100000.00",
+          "total_assets": "262581.80",
+          "total_equity": "225079.36",
+          "total_liabilities": "37502.44"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "130374.99",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "-13405.37",
+          "net_profit": "-282.02",
+          "opening_cash": "143780.36",
+          "operating": "-13405.37",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "-14567.94",
+            "inventory": "0.00",
+            "payables": "1333.27",
+            "receivables": "-2263.68"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "19891.64",
+          "gross_profit": "74672.96",
+          "interest": "0.00",
+          "net_profit": "-282.02",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1855.88",
+            "other": "25.00",
+            "payroll": "61050.72",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "648.38"
+          },
+          "operating_profit": "-282.02",
+          "purchases": "19891.64",
+          "revenue": "94564.60",
+          "total_operating_expenses": "74954.98"
+        }
+      },
+      "2026-05": {
+        "balance_sheet": {
+          "accumulated_depreciation": "88250.00",
+          "cash": "141934.44",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "25750.00",
+          "gst_payable": "14166.95",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "17847.35",
+          "receivables": "105841.03",
+          "retained_earnings": "132411.17",
+          "share_capital": "100000.00",
+          "total_assets": "273525.47",
+          "total_equity": "232411.17",
+          "total_liabilities": "41114.30"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "141934.44",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "11559.45",
+          "net_profit": "7331.81",
+          "opening_cash": "130374.99",
+          "operating": "11559.45",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "7446.40",
+            "inventory": "0.00",
+            "payables": "-3834.54",
+            "receivables": "-1759.22"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "16373.72",
+          "gross_profit": "82737.73",
+          "interest": "0.00",
+          "net_profit": "7331.81",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1596.54",
+            "other": "236.64",
+            "payroll": "61544.50",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "653.24"
+          },
+          "operating_profit": "7331.81",
+          "purchases": "16373.72",
+          "revenue": "99111.45",
+          "total_operating_expenses": "75405.92"
+        }
+      },
+      "2026-06": {
+        "balance_sheet": {
+          "accumulated_depreciation": "90625.00",
+          "cash": "157720.01",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "23375.00",
+          "gst_payable": "22475.99",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "17730.85",
+          "receivables": "118167.87",
+          "retained_earnings": "149956.04",
+          "share_capital": "100000.00",
+          "total_assets": "299262.88",
+          "total_equity": "249956.04",
+          "total_liabilities": "49306.84"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "157720.01",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "15785.57",
+          "net_profit": "17544.87",
+          "opening_cash": "141934.44",
+          "operating": "15785.57",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "8309.04",
+            "inventory": "0.00",
+            "payables": "-116.50",
+            "receivables": "-12326.84"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "16266.83",
+          "gross_profit": "92322.68",
+          "interest": "0.00",
+          "net_profit": "17544.87",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1526.70",
+            "other": "25.00",
+            "payroll": "61087.69",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "763.42"
+          },
+          "operating_profit": "17544.87",
+          "purchases": "16266.83",
+          "revenue": "108589.51",
+          "total_operating_expenses": "74777.81"
+        }
+      },
+      "2026-07": {
+        "balance_sheet": {
+          "accumulated_depreciation": "93000.00",
+          "cash": "157075.45",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "21000.00",
+          "gst_payable": "7337.36",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "18058.77",
+          "receivables": "112537.60",
+          "retained_earnings": "156116.92",
+          "share_capital": "100000.00",
+          "total_assets": "290613.05",
+          "total_equity": "256116.92",
+          "total_liabilities": "34496.13"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "157075.45",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "-644.56",
+          "net_profit": "6160.88",
+          "opening_cash": "157720.01",
+          "operating": "-644.56",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "-15138.63",
+            "inventory": "0.00",
+            "payables": "327.92",
+            "receivables": "5630.27"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "16567.67",
+          "gross_profit": "81526.29",
+          "interest": "0.00",
+          "net_profit": "6160.88",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1717.18",
+            "other": "252.53",
+            "payroll": "61391.95",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "628.75"
+          },
+          "operating_profit": "6160.88",
+          "purchases": "16567.67",
+          "revenue": "98093.96",
+          "total_operating_expenses": "75365.41"
+        }
+      },
+      "2026-08": {
+        "balance_sheet": {
+          "accumulated_depreciation": "95375.00",
+          "cash": "174032.03",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "18625.00",
+          "gst_payable": "15029.55",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "20039.36",
+          "receivables": "117614.95",
+          "retained_earnings": "166103.07",
+          "share_capital": "100000.00",
+          "total_assets": "310271.98",
+          "total_equity": "266103.07",
+          "total_liabilities": "44168.91"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "174032.03",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "16956.58",
+          "net_profit": "9986.15",
+          "opening_cash": "157075.45",
+          "operating": "16956.58",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "7692.19",
+            "inventory": "0.00",
+            "payables": "1980.59",
+            "receivables": "-5077.35"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "18384.74",
+          "gross_profit": "85468.70",
+          "interest": "0.00",
+          "net_profit": "9986.15",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "2049.25",
+            "other": "317.51",
+            "payroll": "61092.36",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "648.43"
+          },
+          "operating_profit": "9986.15",
+          "purchases": "18384.74",
+          "revenue": "103853.44",
+          "total_operating_expenses": "75482.55"
+        }
+      },
+      "2026-09": {
+        "balance_sheet": {
+          "accumulated_depreciation": "97750.00",
+          "cash": "194994.50",
+          "cpf_payable": "9100.00",
+          "fixed_assets_cost": "114000.00",
+          "fixed_assets_net": "16250.00",
+          "gst_payable": "21889.81",
+          "inventory": "0.00",
+          "loans": "0.00",
+          "payables": "15379.78",
+          "receivables": "101998.32",
+          "retained_earnings": "166873.23",
+          "share_capital": "100000.00",
+          "total_assets": "313242.82",
+          "total_equity": "266873.23",
+          "total_liabilities": "46369.59"
+        },
+        "cash_flow": {
+          "add_depreciation": "2375.00",
+          "closing_cash": "194994.50",
+          "financing_loan_principal": "0.00",
+          "investing": "0.00",
+          "net_change": "20962.47",
+          "net_profit": "770.16",
+          "opening_cash": "174032.03",
+          "operating": "20962.47",
+          "working_capital": {
+            "cpf_payable": "0.00",
+            "gst_payable": "6860.26",
+            "inventory": "0.00",
+            "payables": "-4659.58",
+            "receivables": "15616.63"
+          }
+        },
+        "checks": {
+          "balance_sheet_difference": "0.00",
+          "closing_cash_minus_bank": "0.00"
+        },
+        "pnl": {
+          "cost_of_sales": "14109.89",
+          "gross_profit": "76225.16",
+          "interest": "0.00",
+          "net_profit": "770.16",
+          "operating_expenses": {
+            "depreciation": "2375.00",
+            "marketing": "1639.10",
+            "other": "487.59",
+            "payroll": "61220.25",
+            "rent": "7800.00",
+            "software": "1200.00",
+            "utilities": "733.06"
+          },
+          "operating_profit": "770.16",
+          "purchases": "14109.89",
+          "revenue": "90335.05",
+          "total_operating_expenses": "75455.00"
+        }
+      }
+    },
+    "opening_balance_sheet": {
+      "accumulated_depreciation": "69250.00",
+      "as_of": "2025-09-30",
+      "cash": "90000.00",
+      "cpf_payable": "9100.00",
+      "fixed_assets_cost": "114000.00",
+      "gst_payable": "21977.84",
+      "inventory": "0.00",
+      "loans": "0.00",
+      "payables": "22483.88",
+      "receivables": "112363.28",
+      "retained_earnings": "93551.56",
+      "share_capital": "100000.00"
+    }
+  },
+  "as_of": "2026-09-30",
+  "business_id": "biz-clearpath",
+  "closing_balances": {
+    "a-ops": "104994.50",
+    "a-res": "90000.00"
+  },
+  "customers": {
+    "c-lumen": {
+      "invoiced": "154008.28",
+      "observed_mean_delay_days": 40.2,
+      "share_of_invoiced": "0.119",
+      "true_mean_delay_days": 40
+    },
+    "c-northshore": {
+      "invoiced": "201233.84",
+      "observed_mean_delay_days": 4.3,
+      "share_of_invoiced": "0.156",
+      "true_mean_delay_days": 4
+    },
+    "c-pinewood": {
+      "invoiced": "146101.92",
+      "observed_mean_delay_days": 2.9,
+      "share_of_invoiced": "0.113",
+      "true_mean_delay_days": 2
+    },
+    "c-tidewater": {
+      "invoiced": "791146.73",
+      "observed_mean_delay_days": 12.8,
+      "share_of_invoiced": "0.612",
+      "true_mean_delay_days": 15
+    }
+  },
+  "forward": {
+    "basis": "total cash across all accounts; true means, no noise",
+    "first_below_zero": null,
+    "low_point": {
+      "balance": "155456.87",
+      "date": "2026-11-04",
+      "week": 6
+    },
+    "start_balance": "194994.50",
+    "tolerance": "14973.27",
+    "weeks": [
+      {
+        "end": "2026-10-04",
+        "end_balance": "175157.80",
+        "min_balance": "175157.80",
+        "start": "2026-09-28",
+        "week": 1
+      },
+      {
+        "end": "2026-10-11",
+        "end_balance": "185395.98",
+        "min_balance": "170614.72",
+        "start": "2026-10-05",
+        "week": 2
+      },
+      {
+        "end": "2026-10-18",
+        "end_balance": "191088.50",
+        "min_balance": "174795.98",
+        "start": "2026-10-12",
+        "week": 3
+      },
+      {
+        "end": "2026-10-25",
+        "end_balance": "257571.68",
+        "min_balance": "191088.50",
+        "start": "2026-10-19",
+        "week": 4
+      },
+      {
+        "end": "2026-11-01",
+        "end_balance": "175856.87",
+        "min_balance": "175856.87",
+        "start": "2026-10-26",
+        "week": 5
+      },
+      {
+        "end": "2026-11-08",
+        "end_balance": "173456.87",
+        "min_balance": "155456.87",
+        "start": "2026-11-02",
+        "week": 6
+      },
+      {
+        "end": "2026-11-15",
+        "end_balance": "178648.23",
+        "min_balance": "171956.87",
+        "start": "2026-11-09",
+        "week": 7
+      },
+      {
+        "end": "2026-11-22",
+        "end_balance": "255998.23",
+        "min_balance": "177998.23",
+        "start": "2026-11-16",
+        "week": 8
+      },
+      {
+        "end": "2026-11-29",
+        "end_balance": "203973.23",
+        "min_balance": "203973.23",
+        "start": "2026-11-23",
+        "week": 9
+      },
+      {
+        "end": "2026-12-06",
+        "end_balance": "175773.23",
+        "min_balance": "175773.23",
+        "start": "2026-11-30",
+        "week": 10
+      },
+      {
+        "end": "2026-12-13",
+        "end_balance": "192273.23",
+        "min_balance": "175773.23",
+        "start": "2026-12-07",
+        "week": 11
+      },
+      {
+        "end": "2026-12-20",
+        "end_balance": "262523.23",
+        "min_balance": "196523.23",
+        "start": "2026-12-14",
+        "week": 12
+      },
+      {
+        "end": "2026-12-27",
+        "end_balance": "222523.23",
+        "min_balance": "222523.23",
+        "start": "2026-12-21",
+        "week": 13
+      }
+    ]
+  },
+  "history_min_operating_balance": "20324.93",
+  "history_start": "2025-10-01",
+  "largest_customer": {
+    "id": "c-tidewater",
+    "share_of_invoiced": "0.612"
+  },
+  "monthly_totals": {
+    "2025-10": {
+      "by_category": {
+        "cogs": "-22483.88",
+        "marketing": "-1025.22",
+        "other": "-25.00",
+        "payroll": "-59594.90",
+        "rent": "-7800.00",
+        "sales": "109982.75",
+        "software": "-1200.00",
+        "tax": "-21977.84",
+        "transfer": "0.00",
+        "utilities": "-562.55"
+      },
+      "by_group": {
+        "cogs": "-22483.88",
+        "non_operating": "-21977.84",
+        "opex": "-70207.67",
+        "revenue": "109982.75"
+      }
+    },
+    "2025-11": {
+      "by_category": {
+        "cogs": "-20988.43",
+        "marketing": "-1365.51",
+        "other": "-25.00",
+        "payroll": "-61357.50",
+        "rent": "-7800.00",
+        "sales": "112248.51",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-687.80"
+      },
+      "by_group": {
+        "cogs": "-20988.43",
+        "non_operating": "0.00",
+        "opex": "-72435.81",
+        "revenue": "112248.51"
+      }
+    },
+    "2025-12": {
+      "by_category": {
+        "cogs": "-18077.13",
+        "marketing": "-1932.28",
+        "other": "-289.99",
+        "payroll": "-60744.00",
+        "rent": "-7800.00",
+        "sales": "111867.36",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-649.81"
+      },
+      "by_group": {
+        "cogs": "-18077.13",
+        "non_operating": "0.00",
+        "opex": "-72616.08",
+        "revenue": "111867.36"
+      }
+    },
+    "2026-01": {
+      "by_category": {
+        "cogs": "-17538.02",
+        "marketing": "-1631.96",
+        "other": "-25.00",
+        "payroll": "-61237.51",
+        "rent": "-7800.00",
+        "sales": "104027.47",
+        "software": "-1200.00",
+        "tax": "-21799.72",
+        "transfer": "0.00",
+        "utilities": "-547.66"
+      },
+      "by_group": {
+        "cogs": "-17538.02",
+        "non_operating": "-21799.72",
+        "opex": "-72442.13",
+        "revenue": "104027.47"
+      }
+    },
+    "2026-02": {
+      "by_category": {
+        "cogs": "-24102.48",
+        "marketing": "-1748.56",
+        "other": "-398.17",
+        "payroll": "-60700.48",
+        "rent": "-7800.00",
+        "sales": "109536.44",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-672.75"
+      },
+      "by_group": {
+        "cogs": "-24102.48",
+        "non_operating": "0.00",
+        "opex": "-72519.96",
+        "revenue": "109536.44"
+      }
+    },
+    "2026-03": {
+      "by_category": {
+        "cogs": "-21532.90",
+        "marketing": "-1498.04",
+        "other": "-402.97",
+        "payroll": "-60780.28",
+        "rent": "-7800.00",
+        "sales": "107316.07",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-794.90"
+      },
+      "by_group": {
+        "cogs": "-21532.90",
+        "non_operating": "0.00",
+        "opex": "-72476.19",
+        "revenue": "107316.07"
+      }
+    },
+    "2026-04": {
+      "by_category": {
+        "cogs": "-20348.62",
+        "marketing": "-1855.88",
+        "other": "-25.00",
+        "payroll": "-61050.72",
+        "rent": "-7800.00",
+        "sales": "100811.72",
+        "software": "-1200.00",
+        "tax": "-21288.49",
+        "transfer": "0.00",
+        "utilities": "-648.38"
+      },
+      "by_group": {
+        "cogs": "-20348.62",
+        "non_operating": "-21288.49",
+        "opex": "-72579.98",
+        "revenue": "100811.72"
+      }
+    },
+    "2026-05": {
+      "by_category": {
+        "cogs": "-21681.89",
+        "marketing": "-1596.54",
+        "other": "-236.64",
+        "payroll": "-61544.50",
+        "rent": "-7800.00",
+        "sales": "106272.26",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-653.24"
+      },
+      "by_group": {
+        "cogs": "-21681.89",
+        "non_operating": "0.00",
+        "opex": "-73030.92",
+        "revenue": "106272.26"
+      }
+    },
+    "2026-06": {
+      "by_category": {
+        "cogs": "-17847.35",
+        "marketing": "-1526.70",
+        "other": "-25.00",
+        "payroll": "-61087.69",
+        "rent": "-7800.00",
+        "sales": "106035.73",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-763.42"
+      },
+      "by_group": {
+        "cogs": "-17847.35",
+        "non_operating": "0.00",
+        "opex": "-72402.81",
+        "revenue": "106035.73"
+      }
+    },
+    "2026-07": {
+      "by_category": {
+        "cogs": "-17730.85",
+        "marketing": "-1717.18",
+        "other": "-252.53",
+        "payroll": "-61391.95",
+        "rent": "-7800.00",
+        "sales": "112552.69",
+        "software": "-1200.00",
+        "tax": "-22475.99",
+        "transfer": "0.00",
+        "utilities": "-628.75"
+      },
+      "by_group": {
+        "cogs": "-17730.85",
+        "non_operating": "-22475.99",
+        "opex": "-72990.41",
+        "revenue": "112552.69"
+      }
+    },
+    "2026-08": {
+      "by_category": {
+        "cogs": "-18058.77",
+        "marketing": "-2049.25",
+        "other": "-317.51",
+        "payroll": "-61092.36",
+        "rent": "-7800.00",
+        "sales": "108122.90",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-648.43"
+      },
+      "by_group": {
+        "cogs": "-18058.77",
+        "non_operating": "0.00",
+        "opex": "-73107.55",
+        "revenue": "108122.90"
+      }
+    },
+    "2026-09": {
+      "by_category": {
+        "cogs": "-20039.36",
+        "marketing": "-1639.10",
+        "other": "-487.59",
+        "payroll": "-61220.25",
+        "rent": "-7800.00",
+        "sales": "114081.83",
+        "software": "-1200.00",
+        "transfer": "0.00",
+        "utilities": "-733.06"
+      },
+      "by_group": {
+        "cogs": "-20039.36",
+        "non_operating": "0.00",
+        "opex": "-73080.00",
+        "revenue": "114081.83"
+      }
+    }
+  },
+  "open_bills": [
+    "b-0025",
+    "b-0026"
+  ],
+  "overdue_invoices": [
+    "i-0048"
+  ],
+  "payables_ageing": {
+    "1_30": "0",
+    "31_60": "0",
+    "61_90": "0",
+    "not_due": "15379.78",
+    "over_90": "0"
+  },
+  "receivables_ageing": {
+    "1_30": "16942.52",
+    "31_60": "0",
+    "61_90": "0",
+    "not_due": "85055.80",
+    "over_90": "0"
+  },
+  "reconciliation": {
+    "counts": {
+      "high": 0,
+      "low": 9,
+      "medium": 0
+    },
+    "expected": [
+      {
+        "amount": "264.99",
+        "id": "unexplained_payment:t00037",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "373.17",
+        "id": "unexplained_payment:t00071",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "377.97",
+        "id": "unexplained_payment:t00094",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "211.64",
+        "id": "unexplained_payment:t00115",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "227.53",
+        "id": "unexplained_payment:t00151",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "154.31",
+        "id": "unexplained_payment:t00162",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "138.20",
+        "id": "unexplained_payment:t00171",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "209.81",
+        "id": "unexplained_payment:t00183",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      },
+      {
+        "amount": "252.78",
+        "id": "unexplained_payment:t00189",
+        "kind": "unexplained_payment",
+        "severity": "low"
+      }
+    ]
+  },
+  "recurring": [
+    {
+      "amount": "-7800.00",
+      "cadence": "monthly",
+      "category": "rent",
+      "day": 1,
+      "key": "rent",
+      "next_date": "2026-10-01"
+    },
+    {
+      "amount": "-52000.00",
+      "cadence": "monthly",
+      "category": "payroll",
+      "day": 27,
+      "key": "payroll",
+      "next_date": "2026-10-27"
+    },
+    {
+      "amount": "-9100.00",
+      "cadence": "monthly",
+      "category": "payroll",
+      "day": 14,
+      "key": "cpf",
+      "next_date": "2026-10-14"
+    },
+    {
+      "amount": "-650.00",
+      "cadence": "monthly",
+      "category": "utilities",
+      "day": 18,
+      "key": "utilities",
+      "next_date": "2026-10-18"
+    },
+    {
+      "amount": "-1200.00",
+      "cadence": "monthly",
+      "category": "software",
+      "day": 3,
+      "key": "software",
+      "next_date": "2026-10-03"
+    },
+    {
+      "amount": "-1500.00",
+      "cadence": "monthly",
+      "category": "marketing",
+      "day": 12,
+      "key": "marketing",
+      "next_date": "2026-10-12"
+    },
+    {
+      "amount": "-21889.81",
+      "cadence": "quarterly",
+      "category": "tax",
+      "day": 29,
+      "key": "gst",
+      "next_date": "2026-10-29"
+    },
+    {
+      "amount": "-25.00",
+      "cadence": "monthly",
+      "category": "other",
+      "day": 28,
+      "key": "bank_fees",
+      "next_date": "2026-10-28"
+    }
+  ],
+  "scenario": "concentrated_b2b",
+  "seed": 42,
+  "suppliers": {
+    "s-northpoint": {
+      "billed": "182600.63",
+      "share_of_billed": "0.783"
+    },
+    "s-stratus": {
+      "billed": "50724.95",
+      "share_of_billed": "0.217"
+    }
+  },
+  "true_category": {
+    "t00001": "rent",
+    "t00002": "software",
+    "t00003": "cogs",
+    "t00004": "cogs",
+    "t00005": "sales",
+    "t00006": "marketing",
+    "t00007": "payroll",
+    "t00008": "sales",
+    "t00009": "sales",
+    "t00010": "utilities",
+    "t00011": "sales",
+    "t00012": "transfer",
+    "t00013": "transfer",
+    "t00014": "payroll",
+    "t00015": "other",
+    "t00016": "tax",
+    "t00017": "rent",
+    "t00018": "software",
+    "t00019": "cogs",
+    "t00020": "cogs",
+    "t00021": "sales",
+    "t00022": "sales",
+    "t00023": "marketing",
+    "t00024": "sales",
+    "t00025": "payroll",
+    "t00026": "utilities",
+    "t00027": "sales",
+    "t00028": "transfer",
+    "t00029": "transfer",
+    "t00030": "payroll",
+    "t00031": "other",
+    "t00032": "rent",
+    "t00033": "software",
+    "t00034": "cogs",
+    "t00035": "cogs",
+    "t00036": "sales",
+    "t00037": "other",
+    "t00038": "marketing",
+    "t00039": "payroll",
+    "t00040": "utilities",
+    "t00041": "sales",
+    "t00042": "sales",
+    "t00043": "sales",
+    "t00044": "transfer",
+    "t00045": "transfer",
+    "t00046": "payroll",
+    "t00047": "other",
+    "t00048": "rent",
+    "t00049": "sales",
+    "t00050": "software",
+    "t00051": "cogs",
+    "t00052": "cogs",
+    "t00053": "marketing",
+    "t00054": "sales",
+    "t00055": "sales",
+    "t00056": "payroll",
+    "t00057": "utilities",
+    "t00058": "sales",
+    "t00059": "transfer",
+    "t00060": "transfer",
+    "t00061": "payroll",
+    "t00062": "other",
+    "t00063": "tax",
+    "t00064": "rent",
+    "t00065": "sales",
+    "t00066": "cogs",
+    "t00067": "software",
+    "t00068": "cogs",
+    "t00069": "marketing",
+    "t00070": "payroll",
+    "t00071": "other",
+    "t00072": "sales",
+    "t00073": "sales",
+    "t00074": "utilities",
+    "t00075": "sales",
+    "t00076": "transfer",
+    "t00077": "transfer",
+    "t00078": "payroll",
+    "t00079": "other",
+    "t00080": "rent",
+    "t00081": "software",
+    "t00082": "cogs",
+    "t00083": "cogs",
+    "t00084": "sales",
+    "t00085": "marketing",
+    "t00086": "payroll",
+    "t00087": "sales",
+    "t00088": "utilities",
+    "t00089": "sales",
+    "t00090": "sales",
+    "t00091": "transfer",
+    "t00092": "transfer",
+    "t00093": "payroll",
+    "t00094": "other",
+    "t00095": "other",
+    "t00096": "rent",
+    "t00097": "software",
+    "t00098": "cogs",
+    "t00099": "cogs",
+    "t00100": "sales",
+    "t00101": "sales",
+    "t00102": "sales",
+    "t00103": "marketing",
+    "t00104": "payroll",
+    "t00105": "utilities",
+    "t00106": "sales",
+    "t00107": "transfer",
+    "t00108": "transfer",
+    "t00109": "payroll",
+    "t00110": "other",
+    "t00111": "tax",
+    "t00112": "rent",
+    "t00113": "software",
+    "t00114": "cogs",
+    "t00115": "other",
+    "t00116": "cogs",
+    "t00117": "marketing",
+    "t00118": "sales",
+    "t00119": "payroll",
+    "t00120": "sales",
+    "t00121": "utilities",
+    "t00122": "sales",
+    "t00123": "sales",
+    "t00124": "transfer",
+    "t00125": "transfer",
+    "t00126": "payroll",
+    "t00127": "other",
+    "t00128": "rent",
+    "t00129": "software",
+    "t00130": "cogs",
+    "t00131": "cogs",
+    "t00132": "sales",
+    "t00133": "sales",
+    "t00134": "marketing",
+    "t00135": "sales",
+    "t00136": "payroll",
+    "t00137": "utilities",
+    "t00138": "sales",
+    "t00139": "transfer",
+    "t00140": "transfer",
+    "t00141": "payroll",
+    "t00142": "other",
+    "t00143": "rent",
+    "t00144": "software",
+    "t00145": "cogs",
+    "t00146": "cogs",
+    "t00147": "sales",
+    "t00148": "sales",
+    "t00149": "marketing",
+    "t00150": "payroll",
+    "t00151": "other",
+    "t00152": "utilities",
+    "t00153": "sales",
+    "t00154": "transfer",
+    "t00155": "transfer",
+    "t00156": "sales",
+    "t00157": "payroll",
+    "t00158": "other",
+    "t00159": "tax",
+    "t00160": "rent",
+    "t00161": "software",
+    "t00162": "other",
+    "t00163": "cogs",
+    "t00164": "sales",
+    "t00165": "cogs",
+    "t00166": "marketing",
+    "t00167": "payroll",
+    "t00168": "sales",
+    "t00169": "utilities",
+    "t00170": "sales",
+    "t00171": "other",
+    "t00172": "sales",
+    "t00173": "transfer",
+    "t00174": "transfer",
+    "t00175": "payroll",
+    "t00176": "other",
+    "t00177": "rent",
+    "t00178": "cogs",
+    "t00179": "software",
+    "t00180": "sales",
+    "t00181": "cogs",
+    "t00182": "sales",
+    "t00183": "other",
+    "t00184": "marketing",
+    "t00185": "payroll",
+    "t00186": "sales",
+    "t00187": "utilities",
+    "t00188": "sales",
+    "t00189": "other",
+    "t00190": "transfer",
+    "t00191": "transfer",
+    "t00192": "payroll",
+    "t00193": "other"
+  }
+}

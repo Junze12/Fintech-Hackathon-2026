@@ -1,0 +1,7 @@
+id,counterparty_id,statement_date,number,issue_date,amount,description
+st-b-0021,s-northpoint,2026-09-30,BL-5021,2026-07-07,13865.35,Invoice
+st-b-0023,s-northpoint,2026-09-30,BL-5023,2026-08-03,16001.13,Invoice
+st-b-0025,s-northpoint,2026-09-30,BL-5025,2026-09-03,10836.70,Invoice
+st-b-0022,s-stratus,2026-09-30,BL-5022,2026-07-07,4193.42,Invoice
+st-b-0024,s-stratus,2026-09-30,BL-5024,2026-08-06,4038.23,Invoice
+st-b-0026,s-stratus,2026-09-30,BL-5026,2026-09-06,4543.08,Invoice

@@ -1,0 +1,15 @@
+id: T-ST-03
+capability: stress
+title: Largest surprise payment a healthy business can absorb
+why: >
+  Clearpath Systems never goes below zero in any run. The question is how big a one-off
+  payment on 1 Nov it could take and still stay above zero in 95% of runs: S$154,335.71,
+  read from the same 2,000 runs. The answer must give that amount from the tool.
+scenario: concentrated_b2b
+turns:
+  - user: "How big a surprise payment could we absorb on 1 November and still be safe?"
+    expect:
+      tools: [stress_test_cash]
+      values:
+        - tool: stress_test_cash
+          path: value.largest_survivable_shock                        # S$154,335.71

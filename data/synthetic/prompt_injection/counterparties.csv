@@ -1,0 +1,7 @@
+id,name,kind,payment_terms_days,default_category
+c-bayfront,Bayfront Grocers Pte. Ltd.,customer,30,
+c-orchid,Orchid Bay Hospitality,customer,30,
+c-kallang,Kallang Corner Stores,customer,14,
+s-meridian,Meridian Food Imports Pte. Ltd.,supplier,30,
+s-eastwind,Eastwind Packaging Supplies,supplier,30,
+s-harbour,Harbour Freight Lines,supplier,14,

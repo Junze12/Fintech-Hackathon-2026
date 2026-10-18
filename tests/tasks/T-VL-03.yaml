@@ -1,0 +1,20 @@
+id: T-VL-03
+capability: valuation
+title: "Correction: use a 15% discount rate"
+why: >
+  The owner corrects the discount rate. The assistant must call the tool again with 15% (for
+  this answer only, nothing saved) and give the new expected-case value, S$712,649.62 instead
+  of S$576,789.10 at 20%.
+scenario: concentrated_b2b
+turns:
+  - user: "What is the business worth?"
+    expect:
+      tools: [get_break_even_and_value]
+  - user: "Use a 15% discount rate instead."
+    expect:
+      tools: [get_break_even_and_value]
+      tool_args:
+        get_break_even_and_value: {discount_rate_pct: "15"}
+      values:
+        - tool: get_break_even_and_value
+          path: value.valuation.cases.expected.dcf.equity_value                    # S$712,649.62

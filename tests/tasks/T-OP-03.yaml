@@ -1,0 +1,21 @@
+id: T-OP-03
+capability: options
+title: The owner corrects an assumption and the plans are compared again
+why: >
+  compare_options assumes a 50% chance that a chased invoice is then paid on time (our
+  assumption, not data). The owner says Bayfront would pay on time with a 90% chance. The
+  model must re-run with chase_on_time_pct 90; the same plan wins, but its credit line
+  shrinks from S$29,000 to S$26,000.
+scenario: cash_crunch
+turns:
+  - user: "Which plan would you pick to keep cash above zero?"
+    expect:
+      tools: [compare_options]
+  - user: "I think there's a 90% chance Bayfront pays on time if we chase them. Compare the plans again with that."
+    expect:
+      tools: [compare_options]
+      tool_args:
+        compare_options: {chase_on_time_pct: 90}
+      values:
+        - tool: compare_options
+          path: value.best.credit_line.limit                          # S$26,000.00

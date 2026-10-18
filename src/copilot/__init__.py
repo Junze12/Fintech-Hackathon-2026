@@ -1,0 +1,1 @@
+"""Fintellect: SME Finance Copilot."""

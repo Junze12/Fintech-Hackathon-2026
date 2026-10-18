@@ -1,0 +1,16 @@
+id: T-RC-04
+capability: reconciliation
+title: Clean books say so
+why: >
+  cash_crunch has no planted errors: no high or medium exceptions, only 10 small vague payments
+  with no payee or category (low, tidy-ups). The answer must not invent problems and should
+  give the count of small items from the tool.
+scenario: cash_crunch
+turns:
+  - user: "Is anything wrong in our books?"
+    expect:
+      tools: [get_reconciliation_exceptions]
+      values:
+        - truth: reconciliation.counts.low   # 10 small unexplained payments
+          kind: number
+      any_of: ["no high", "nothing serious", "no serious", "no major", "small", "minor"]

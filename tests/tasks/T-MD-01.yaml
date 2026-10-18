@@ -1,0 +1,18 @@
+id: T-MD-01
+capability: model
+title: Three-year outlook, expected case
+why: >
+  Straits Harbour's sales are flat (-0.23% a year measured) and it lost money on accrual basis
+  last year. The expected case from its own books keeps losing money (year-1 net profit about
+  -S$21.8k) and month-end cash is almost used up by the end of year 3. The answer must come from
+  the 3-year model, not from the 13-week forecast or last year's statements.
+scenario: cash_crunch
+turns:
+  - user: "Where will we be financially in three years? Will we stay profitable?"
+    expect:
+      tools: [get_financial_model]
+      values:
+        - tool: get_financial_model
+          path: value.cases.expected.outlook.net_profit_by_year.0     # -S$21,818.79
+        - tool: get_financial_model
+          path: value.cases.expected.outlook.cash_end_of_year.2       # S$2,454.35

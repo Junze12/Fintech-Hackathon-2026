@@ -1,0 +1,14 @@
+id,counterparty_id,statement_date,number,issue_date,amount,description
+st-b-0041,s-eastwind,2026-09-30,BL-5041,2026-07-06,7979.70,Invoice
+st-b-0045,s-eastwind,2026-09-30,BL-5045,2026-08-06,6948.22,Invoice
+st-b-0049,s-eastwind,2026-09-30,BL-5049,2026-09-04,7116.82,Invoice
+st-b-0042,s-harbour,2026-09-30,BL-5042,2026-07-06,4721.03,Invoice
+st-b-0043,s-harbour,2026-09-30,BL-5043,2026-07-22,4907.68,Invoice
+st-b-0046,s-harbour,2026-09-30,BL-5046,2026-08-05,4592.82,Invoice
+st-b-0047,s-harbour,2026-09-30,BL-5047,2026-08-18,4174.92,Invoice
+st-b-0050,s-harbour,2026-09-30,BL-5050,2026-09-06,4711.67,Invoice
+st-b-0051,s-harbour,2026-09-30,BL-5051,2026-09-21,5255.81,Invoice
+st-b-0040,s-meridian,2026-09-30,BL-5040,2026-07-07,48572.40,Invoice
+st-b-0044,s-meridian,2026-09-30,BL-5044,2026-08-03,50319.59,Invoice
+st-b-0048,s-meridian,2026-09-30,BL-5048,2026-09-03,61898.43,Invoice
+st-b-bulk-stock,s-meridian,2026-09-30,MFI-88120,2026-09-21,85000.00,Invoice

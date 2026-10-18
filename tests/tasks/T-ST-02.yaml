@@ -1,0 +1,19 @@
+id: T-ST-02
+capability: stress
+title: A surprise repair bill before the November dip
+why: >
+  A S$20,000 repair on 15 Oct is covered on the day (cash is still high in mid-October), but
+  the business then runs short later, mostly on 5 Nov, in almost every run. The answer must
+  pass the shock to the stress test and say both things: affordable on the day, short later.
+scenario: cash_crunch
+turns:
+  - user: "Could we absorb a surprise S$20,000 equipment repair on 15 October?"
+    expect:
+      tools: [stress_test_cash]
+      tool_args:
+        stress_test_cash: {shock_date: "2026-10-15"}
+      values:
+        - tool: stress_test_cash
+          path: value.failures.most_likely_day                        # 2026-11-05
+      any_of: ["later", "afterwards", "after that", "still run", "runs short", "short on",
+               "november", "bigger problem", "goes negative", "below zero"]

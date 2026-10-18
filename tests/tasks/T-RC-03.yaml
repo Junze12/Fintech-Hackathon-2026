@@ -1,0 +1,16 @@
+id: T-RC-03
+capability: reconciliation
+title: Supplier statement check
+why: >
+  Meridian's statement lists bill BL-5099 for S$6,420.00 that is not in our bills. The answer
+  must say a bill is missing from our records and that it should be checked with the supplier
+  before anything is paid.
+scenario: messy_books
+turns:
+  - user: "Does Meridian's statement agree with our records?"
+    expect:
+      tools: [get_reconciliation_exceptions]
+      no_tools: [schedule_payment]
+      values:
+        - truth: planted.7.amount       # S$6,420.00
+      any_of: ["BL-5099", "not in our", "missing", "not recorded", "no record"]

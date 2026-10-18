@@ -1,0 +1,21 @@
+id: T-VL-01
+capability: valuation
+title: When will we break even?
+why: >
+  Straits Harbour covers its costs today on cash basis (break-even S$124,480.60 a month vs
+  S$132,684.45 of sales received, last 3 months), but not on accrual basis, and in the expected
+  case sales stay below break-even for all 3 years (year 1 needs S$129,721.65 a month against
+  about S$126,678 of sales). The answer must give the projected figure, say break-even is not
+  reached within 3 years, and not mix the two bases silently.
+scenario: cash_crunch
+turns:
+  - user: "When will we break even, and how far are we from it?"
+    expect:
+      tools: [get_break_even_and_value]
+      any_value:   # the same fact two ways: the sales needed, or the gap to it (Daniel, 2026-10-13)
+        - tool: get_break_even_and_value
+          path: value.break_even.cases.expected.years.0.break_even_monthly_sales   # S$129,721.65
+        - tool: get_break_even_and_value
+          path: value.break_even.cases.expected.years.0.headroom                   # -S$3,043.31
+      any_of: ["not within", "won't", "will not", "does not reach", "doesn't reach", "never",
+               "stay below", "stays below", "remain below", "remains below", "below break-even"]

@@ -1,0 +1,76 @@
+id,date,kind,ref_id,counterparty_id,account_id,amount,category,number,issue_date,due_date,description,gst
+ev-0001,2026-10-01,debit,,,a-ops,-12500.00,rent,,,,RENT OCT 26 UNIT 05-12,
+ev-0002,2026-10-03,bill_payment,b-0048,s-meridian,a-ops,-61898.43,cogs,,,,GIRO Meridian Food Imports Pte. Ltd. BL-5048,
+ev-0003,2026-10-03,debit,,,a-ops,-640.00,software,,,,CLOUDLEDGER SUBSCRIPTION,
+ev-0004,2026-10-04,bill_payment,b-0049,s-eastwind,a-ops,-7116.82,cogs,,,,GIRO Eastwind Packaging Supplies BL-5049,
+ev-0005,2026-10-05,invoice_issued,i-0066,c-bayfront,a-ops,42000.00,,INV-1066,2026-10-05,2026-11-04,,3467.89
+ev-0006,2026-10-05,invoice_issued,i-0068,c-orchid,a-ops,32000.00,,INV-1068,2026-10-05,2026-11-04,,2642.20
+ev-0007,2026-10-05,invoice_issued,i-0069,c-kallang,a-ops,11000.00,,INV-1069,2026-10-05,2026-10-19,,908.26
+ev-0008,2026-10-05,bill_issued,b-0053,s-meridian,a-ops,56000.00,,BL-5053,2026-10-05,2026-11-04,,4623.85
+ev-0009,2026-10-05,bill_issued,b-0054,s-eastwind,a-ops,6500.00,,BL-5054,2026-10-05,2026-11-04,,536.70
+ev-0010,2026-10-05,bill_issued,b-0055,s-harbour,a-ops,4800.00,,BL-5055,2026-10-05,2026-10-19,,396.33
+ev-0011,2026-10-05,bill_payment,b-0051,s-harbour,a-ops,-5255.81,cogs,,,,GIRO Harbour Freight Lines BL-5051,
+ev-0012,2026-10-06,receipt,i-0065,c-kallang,a-ops,12328.58,sales,,,,GIRO CR Kallang Corner Stores INV-1065,
+ev-0013,2026-10-10,debit,,,a-ops,-4200.00,loan_repayment,,,,LOAN REPAYMENT TL-20817,
+ev-0014,2026-10-11,receipt,i-0057,c-bayfront,a-ops,45783.49,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1057,
+ev-0015,2026-10-14,debit,,,a-ops,-7800.00,payroll,,,,CPF CONTRIBUTION OCT26,
+ev-0016,2026-10-18,debit,,,a-ops,-2100.00,utilities,,,,GIRO SP SERVICES OCT,
+ev-0017,2026-10-19,bill_payment,b-0055,s-harbour,a-ops,-4800.00,cogs,,,,GIRO Harbour Freight Lines BL-5055,
+ev-0018,2026-10-20,invoice_issued,i-0067,c-bayfront,a-ops,42000.00,,INV-1067,2026-10-20,2026-11-19,,3467.89
+ev-0019,2026-10-20,invoice_issued,i-0070,c-kallang,a-ops,11000.00,,INV-1070,2026-10-20,2026-11-03,,908.26
+ev-0020,2026-10-20,bill_issued,b-0056,s-harbour,a-ops,4800.00,,BL-5056,2026-10-20,2026-11-03,,396.33
+ev-0021,2026-10-22,receipt,i-0069,c-kallang,a-ops,11000.00,sales,,,,GIRO CR Kallang Corner Stores INV-1069,
+ev-0022,2026-10-26,receipt,i-0061,c-bayfront,a-ops,49283.96,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1061,
+ev-0023,2026-10-27,debit,,,a-ops,-39000.00,payroll,,,,SALARY OCT26,
+ev-0024,2026-10-28,debit,,,a-ops,-35.00,other,,,,SERVICE CHARGE OCT,
+ev-0025,2026-10-29,debit,,,a-ops,-9867.75,tax,,,,IRAS GST Q3 2026,
+ev-0026,2026-11-01,receipt,i-0063,c-orchid,a-ops,27914.76,sales,,,,GIRO CR Orchid Bay Hospitality INV-1063,
+ev-0027,2026-11-01,debit,,,a-ops,-12500.00,rent,,,,RENT NOV 26 UNIT 05-12,
+ev-0028,2026-11-03,bill_payment,b-0056,s-harbour,a-ops,-4800.00,cogs,,,,GIRO Harbour Freight Lines BL-5056,
+ev-0029,2026-11-03,debit,,,a-ops,-640.00,software,,,,CLOUDLEDGER SUBSCRIPTION,
+ev-0030,2026-11-04,bill_payment,b-0053,s-meridian,a-ops,-56000.00,cogs,,,,GIRO Meridian Food Imports Pte. Ltd. BL-5053,
+ev-0031,2026-11-04,bill_payment,b-0054,s-eastwind,a-ops,-6500.00,cogs,,,,GIRO Eastwind Packaging Supplies BL-5054,
+ev-0032,2026-11-05,invoice_issued,i-0071,c-bayfront,a-ops,42000.00,,INV-1071,2026-11-05,2026-12-05,,3467.89
+ev-0033,2026-11-05,invoice_issued,i-0073,c-orchid,a-ops,32000.00,,INV-1073,2026-11-05,2026-12-05,,2642.20
+ev-0034,2026-11-05,invoice_issued,i-0074,c-kallang,a-ops,11000.00,,INV-1074,2026-11-05,2026-11-19,,908.26
+ev-0035,2026-11-05,bill_issued,b-0057,s-meridian,a-ops,56000.00,,BL-5057,2026-11-05,2026-12-05,,4623.85
+ev-0036,2026-11-05,bill_issued,b-0058,s-eastwind,a-ops,6500.00,,BL-5058,2026-11-05,2026-12-05,,536.70
+ev-0037,2026-11-05,bill_issued,b-0059,s-harbour,a-ops,4800.00,,BL-5059,2026-11-05,2026-11-19,,396.33
+ev-0038,2026-11-05,bill_payment,b-bulk-stock,s-meridian,a-ops,-85000.00,cogs,,,,GIRO Meridian Food Imports Pte. Ltd. MFI-88120,
+ev-0039,2026-11-06,receipt,i-0070,c-kallang,a-ops,11000.00,sales,,,,GIRO CR Kallang Corner Stores INV-1070,
+ev-0040,2026-11-10,receipt,i-0062,c-bayfront,a-ops,51283.20,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1062,
+ev-0041,2026-11-10,debit,,,a-ops,-4200.00,loan_repayment,,,,LOAN REPAYMENT TL-20817,
+ev-0042,2026-11-14,debit,,,a-ops,-7800.00,payroll,,,,CPF CONTRIBUTION NOV26,
+ev-0043,2026-11-18,debit,,,a-ops,-2100.00,utilities,,,,GIRO SP SERVICES NOV,
+ev-0044,2026-11-19,bill_payment,b-0059,s-harbour,a-ops,-4800.00,cogs,,,,GIRO Harbour Freight Lines BL-5059,
+ev-0045,2026-11-20,invoice_issued,i-0072,c-bayfront,a-ops,42000.00,,INV-1072,2026-11-20,2026-12-20,,3467.89
+ev-0046,2026-11-20,invoice_issued,i-0075,c-kallang,a-ops,11000.00,,INV-1075,2026-11-20,2026-12-04,,908.26
+ev-0047,2026-11-20,bill_issued,b-0060,s-harbour,a-ops,4800.00,,BL-5060,2026-11-20,2026-12-04,,396.33
+ev-0048,2026-11-22,receipt,i-0074,c-kallang,a-ops,11000.00,sales,,,,GIRO CR Kallang Corner Stores INV-1074,
+ev-0049,2026-11-26,receipt,i-0066,c-bayfront,a-ops,42000.00,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1066,
+ev-0050,2026-11-27,debit,,,a-ops,-39000.00,payroll,,,,SALARY NOV26,
+ev-0051,2026-11-28,debit,,,a-ops,-35.00,other,,,,SERVICE CHARGE NOV,
+ev-0052,2026-11-29,receipt,i-0068,c-orchid,a-ops,32000.00,sales,,,,GIRO CR Orchid Bay Hospitality INV-1068,
+ev-0053,2026-12-01,debit,,,a-ops,-12500.00,rent,,,,RENT DEC 26 UNIT 05-12,
+ev-0054,2026-12-03,debit,,,a-ops,-640.00,software,,,,CLOUDLEDGER SUBSCRIPTION,
+ev-0055,2026-12-04,bill_payment,b-0060,s-harbour,a-ops,-4800.00,cogs,,,,GIRO Harbour Freight Lines BL-5060,
+ev-0056,2026-12-05,invoice_issued,i-0076,c-bayfront,a-ops,42000.00,,INV-1076,2026-12-05,2027-01-04,,3467.89
+ev-0057,2026-12-05,invoice_issued,i-0078,c-orchid,a-ops,32000.00,,INV-1078,2026-12-05,2027-01-04,,2642.20
+ev-0058,2026-12-05,invoice_issued,i-0079,c-kallang,a-ops,11000.00,,INV-1079,2026-12-05,2026-12-19,,908.26
+ev-0059,2026-12-05,bill_issued,b-0061,s-meridian,a-ops,56000.00,,BL-5061,2026-12-05,2027-01-04,,4623.85
+ev-0060,2026-12-05,bill_issued,b-0062,s-eastwind,a-ops,6500.00,,BL-5062,2026-12-05,2027-01-04,,536.70
+ev-0061,2026-12-05,bill_issued,b-0063,s-harbour,a-ops,4800.00,,BL-5063,2026-12-05,2026-12-19,,396.33
+ev-0062,2026-12-05,bill_payment,b-0057,s-meridian,a-ops,-56000.00,cogs,,,,GIRO Meridian Food Imports Pte. Ltd. BL-5057,
+ev-0063,2026-12-05,bill_payment,b-0058,s-eastwind,a-ops,-6500.00,cogs,,,,GIRO Eastwind Packaging Supplies BL-5058,
+ev-0064,2026-12-07,receipt,i-0075,c-kallang,a-ops,11000.00,sales,,,,GIRO CR Kallang Corner Stores INV-1075,
+ev-0065,2026-12-10,debit,,,a-ops,-4200.00,loan_repayment,,,,LOAN REPAYMENT TL-20817,
+ev-0066,2026-12-11,receipt,i-0067,c-bayfront,a-ops,42000.00,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1067,
+ev-0067,2026-12-14,debit,,,a-ops,-7800.00,payroll,,,,CPF CONTRIBUTION DEC26,
+ev-0068,2026-12-18,debit,,,a-ops,-2100.00,utilities,,,,GIRO SP SERVICES DEC,
+ev-0069,2026-12-19,bill_payment,b-0063,s-harbour,a-ops,-4800.00,cogs,,,,GIRO Harbour Freight Lines BL-5063,
+ev-0070,2026-12-20,invoice_issued,i-0077,c-bayfront,a-ops,42000.00,,INV-1077,2026-12-20,2027-01-19,,3467.89
+ev-0071,2026-12-20,invoice_issued,i-0080,c-kallang,a-ops,11000.00,,INV-1080,2026-12-20,2027-01-03,,908.26
+ev-0072,2026-12-20,bill_issued,b-0064,s-harbour,a-ops,4800.00,,BL-5064,2026-12-20,2027-01-03,,396.33
+ev-0073,2026-12-22,receipt,i-0079,c-kallang,a-ops,11000.00,sales,,,,GIRO CR Kallang Corner Stores INV-1079,
+ev-0074,2026-12-27,receipt,i-0071,c-bayfront,a-ops,42000.00,sales,,,,GIRO CR Bayfront Grocers Pte. Ltd. INV-1071,
+ev-0075,2026-12-27,debit,,,a-ops,-39000.00,payroll,,,,SALARY DEC26,

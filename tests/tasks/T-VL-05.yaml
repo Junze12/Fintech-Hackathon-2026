@@ -1,0 +1,17 @@
+id: T-VL-05
+capability: valuation
+title: What the valuation is based on
+why: >
+  The discount rate (20%), growth after year 3 (2%) and EBITDA multiple (4x) are our
+  assumptions, not data; tax is the flat 17% headline rate. The answer must name them as
+  assumptions rather than present them as measured facts.
+scenario: concentrated_b2b
+turns:
+  - user: "What is your valuation based on? Which inputs are assumptions?"
+    expect:
+      tools: [get_break_even_and_value]
+      values:
+        - tool: get_break_even_and_value
+          path: value.valuation.inputs.0.value                                     # 20%
+          kind: percent
+      any_of: ["our assumption", "an assumption", "not data", "assumed", "not measured"]

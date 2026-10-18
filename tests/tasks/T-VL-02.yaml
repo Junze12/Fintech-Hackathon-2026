@@ -1,0 +1,17 @@
+id: T-VL-02
+capability: valuation
+title: What is the business worth?
+why: >
+  Clearpath Systems makes money in the expected case. A DCF of its free cash flow after a flat
+  17% tax (20% discount rate, 2% growth after year 3, both our assumptions) gives an
+  enterprise value of S$381,794.60; with S$194,994.50 of cash and no loans the equity value is
+  S$576,789.10. The answer must give it as an estimate, not a price.
+scenario: concentrated_b2b
+turns:
+  - user: "Roughly what is our business worth?"
+    expect:
+      tools: [get_break_even_and_value]
+      values:
+        - tool: get_break_even_and_value
+          path: value.valuation.cases.expected.dcf.equity_value                    # S$576,789.10
+      any_of: ["estimate"]

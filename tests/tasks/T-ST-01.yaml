@@ -1,0 +1,21 @@
+id: T-ST-01
+capability: stress
+title: Chances of running out of cash
+why: >
+  The 13-week forecast gives one path; the stress test simulates 2,000 runs of customer
+  payment timing from each customer's own past delays. For Straits Harbour almost every run
+  goes below zero, most often first on 5 Nov (the S$85,000 MFI-88120 bill), in about 84% of
+  runs. The answer must give the likelihood from the simulation, name the day, and not
+  present it as a certainty.
+scenario: cash_crunch
+turns:
+  - user: "What are the chances we run out of cash in the next three months?"
+    expect:
+      tools: [stress_test_cash]
+      values:
+        - tool: stress_test_cash
+          path: value.failures.most_likely_day                        # 2026-11-05
+        - tool: stress_test_cash
+          path: value.failures.most_likely_day_share_pct              # 83.70%
+          kind: percent
+      any_of: ["simulat", "runs"]

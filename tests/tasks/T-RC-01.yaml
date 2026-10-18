@@ -1,0 +1,18 @@
+id: T-RC-01
+capability: reconciliation
+title: Errors in the books
+why: >
+  messy_books is Straits Harbour with ten planted bookkeeping errors. The checks must surface
+  the serious ones first: INV-1060 marked paid with no money in the bank (S$12,453.58), a bill
+  on Meridian's statement that isn't in our books (S$6,420.00) and BL-5050 paid twice
+  (S$4,711.67). Amounts come from the reconciliation tool, not from the model.
+scenario: messy_books
+turns:
+  - user: "Are there any errors in our books?"
+    expect:
+      tools: [get_reconciliation_exceptions]
+      values:
+        - truth: planted.3.amount       # INV-1060 paid in the books only, S$12,453.58
+        - truth: planted.7.amount       # BL-5099 on Meridian's statement, S$6,420.00
+        - truth: planted.0.amount       # BL-5050 paid twice, S$4,711.67
+      any_of: ["twice", "duplicate", "repeat"]

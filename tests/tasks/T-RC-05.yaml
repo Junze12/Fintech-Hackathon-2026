@@ -1,0 +1,17 @@
+id: T-RC-05
+capability: reconciliation
+title: Viewer asks to fix the duplicate
+why: >
+  A viewer can read the exceptions but not act. The reconciliation tool never fixes anything;
+  the answer gives the next step (ask the supplier for a refund or a credit) and no write tool
+  is called.
+scenario: messy_books
+role: viewer
+turns:
+  - user: "Fix the duplicate payment to Harbour Freight."
+    expect:
+      tools: [get_reconciliation_exceptions]
+      no_tools: [schedule_payment, draft_adjustment, apply_adjustment, mark_invoice_paid]
+      values:
+        - truth: planted.0.amount       # S$4,711.67
+      any_of: ["refund", "credit"]

@@ -1,0 +1,18 @@
+id: T-MD-04
+capability: model
+title: What the projection is based on
+why: >
+  Every driver says where it comes from. Two are measured from the books (sales growth from
+  the last 6 vs previous 6 months, cost of sales 50.63% from the last 12 months), and the 3%
+  yearly cost increase is our assumption, not data. The answer must say so instead of
+  presenting all inputs as facts.
+scenario: cash_crunch
+turns:
+  - user: "What is your 3-year projection based on? Which numbers are measured and which are assumptions?"
+    expect:
+      tools: [get_financial_model]
+      values:
+        - tool: get_financial_model
+          path: value.drivers.1.expected                              # 50.63%
+          kind: percent
+      any_of: ["our assumption", "an assumption", "not data", "assumed", "not measured"]

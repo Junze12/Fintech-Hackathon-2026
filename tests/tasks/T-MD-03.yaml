@@ -1,0 +1,19 @@
+id: T-MD-03
+capability: model
+title: The owner's own growth figure
+why: >
+  "Sales grow 10% a year" replaces the measured -0.23% in the expected case for this answer
+  only (worst becomes 0%, best 20%) and nothing is saved. Year-1 sales are then 10% above the
+  last 12 months: S$1,676,008.92 (12 x the last-12-month average of S$126,970.37 x 1.10).
+scenario: cash_crunch
+turns:
+  - user: "What if our sales grow 10% a year over the next three years? What would year-1 sales and profit be?"
+    expect:
+      tools: [get_financial_model]
+      tool_args:
+        get_financial_model: {sales_growth_pct: "10"}
+      values:
+        - tool: get_financial_model
+          path: value.cases.expected.outlook.revenue_by_year.0
+        - tool: get_financial_model
+          path: value.cases.expected.outlook.net_profit_by_year.0

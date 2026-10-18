@@ -1,0 +1,22 @@
+id: T-OP-01
+capability: options
+title: Which plan gets a struggling business safely through 13 weeks
+why: >
+  No plan without borrowing survives: the 27 Dec payroll leaves Straits Harbour short in every
+  run. compare_options scores 56 plans on the stress test's 2,000 runs; the best one chases
+  INV-1062, asks Meridian to wait on MFI-88120 and opens a S$29,000 credit line drawn only
+  when short: 96.10% of runs stay above zero for about S$521.98 (S$500 fee + interest). The
+  answer must name the credit line and give survival and cost from the tool.
+scenario: cash_crunch
+turns:
+  - user: "Which plan gets us safely through the next three months, and what would it cost?"
+    expect:
+      tools: [compare_options]
+      values:
+        - tool: compare_options
+          path: value.best.survival_pct                               # 96.10%
+          kind: percent
+        - tool: compare_options
+          path: value.best.cost_vs_nothing                            # S$521.98
+      any_of: ["credit line", "line of credit"]
+      excludes: [guaranteed, "will be approved", pre-approved]

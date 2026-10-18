@@ -1,0 +1,16 @@
+id: T-MD-02
+capability: model
+title: Worst case, when cash runs out
+why: >
+  In the worst case (sales -10 points, cost of sales +3 points, customers 15 days slower,
+  costs +5% a year) month-end cash first goes below zero in April 2027. The owner needs the
+  month, not only a general warning.
+scenario: cash_crunch
+turns:
+  - user: "What's the worst case for our cash over the next three years? When would we run out?"
+    expect:
+      tools: [get_financial_model]
+      values:
+        - tool: get_financial_model
+          path: value.cases.worst.outlook.first_month_below_zero      # 2027-04
+          kind: month

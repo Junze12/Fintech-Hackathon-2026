@@ -1,0 +1,18 @@
+id: T-VL-04
+capability: valuation
+title: A value that isn't meaningful
+why: >
+  On Straits Harbour's expected case the business uses cash in year 3 (free cash flow
+  -S$48,104.67) and year-1 EBITDA is S$470.28 (0.03% of sales), so neither the DCF nor the
+  multiple gives a meaningful value. The answer must say so instead of inventing a figure, and
+  can give the best case (DCF equity value S$1,152,458.86, 67% of it after year 3).
+scenario: cash_crunch
+turns:
+  - user: "What is the business worth in the expected case, and in the best case?"
+    expect:
+      tools: [get_break_even_and_value]
+      values:
+        - tool: get_break_even_and_value
+          path: value.valuation.cases.best.dcf.equity_value                        # S$1,152,458.86
+      any_of: ["not meaningful", "isn't meaningful", "not a meaningful", "no meaningful",
+               "can't give", "cannot give", "can't put", "cannot put"]

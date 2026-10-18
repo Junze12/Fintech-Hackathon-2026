@@ -1,0 +1,17 @@
+id: T-OP-02
+capability: options
+title: A healthy business is told it needs nothing
+why: >
+  Clearpath Systems keeps cash above zero in 100% of runs without doing anything, so the
+  cheapest safe plan is to do nothing: no discount, no credit line, no loan. The answer must
+  say no action or borrowing is needed.
+scenario: concentrated_b2b
+turns:
+  - user: "What's the cheapest way to stay safe over the next 13 weeks?"
+    expect:
+      tools: [compare_options]
+      values:
+        - tool: compare_options
+          path: value.table.0.survival_pct                            # 100.00%
+          kind: percent
+      any_of: ["no action", "nothing", "not needed", "don't need", "do not need"]
